@@ -12,7 +12,7 @@
 		2) middle
 		3) менюшка
 		-->
-  		<section class="top">
+  		<div class="top">
   			<!-- лого, поиск, закладки, корзина, оформление заказа -->
   			<div class="logo">
   				Техномарт 
@@ -30,20 +30,19 @@
   				<li class="basket"><a href="#basket">Корзина: 0</a></li>
   				<li class="checkout"><a href="#checkout">Оформить заказ</a></li>
   			</ul>
-  		</section>
+  		</div>
 
 		<!-- приветствие, адрес, телефон, вход, регистрация -->
-  		<section class="middle">
+  		<div class="middle">
   			<div class="hello">
-  				Интернет-магазин строительных материалов и инструментов для ремонта
+          <!--  думаю на главной этой заголовок -->
+  				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   			</div>
 
   			<!-- блок контактов -->
   			<div class="contacts">
-  				<ul>
-  					<li class="telephone">+7 (812) 555-05-55</li>
-  					<li class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
-  				</ul>
+  				<div class="telephone">+7 (812) 555-05-55</div>
+  				<div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
   			</div>
 
   			<!-- авторизация/регистрация -->
@@ -51,24 +50,152 @@
   				<li class="login">Войти</li>
   				<li class="register">Регистрация</li>
   			</ul>
-  		</section>
+  		</div>
 
-  		<section class="sitemenu">
+      <!-- менюшка -->
+  		<div class="sitemenu">
   			<nav class="menu">
   				<ul>
-  				<li><a href="#main">Главная</a></li>
-  				<li><a href="#about">Компания</a></li>
-  				<li><a href="#catalog">Каталог</a></li>
-  				<li><a href="#news">Новости</a></li>
-  				<li><a href="#offers">Спецпредложения</a></li>
-  				<li><a href="#delivery">Доставка</a></li>
-  				<li><a href="#contacts">Контакты</a></li>
+	  				<li><a href="#main">Главная</a></li>
+	  				<li><a href="#about">Компания</a></li>
+	  				<li><a href="#catalog">Каталог</a></li>
+	  				<li><a href="#news">Новости</a></li>
+	  				<li><a href="#offers">Спецпредложения</a></li>
+	  				<li><a href="#delivery">Доставка</a></li>
+	  				<li><a href="#contacts">Контакты</a></li>
   				</ul>
   			</nav>
-  		</section>
+  		</div>
   	</header>
 
   	<main>
+
+
+      <!-- популярные товары -->
+      <section class="popular">
+
+        <header>
+          <h2>Популярные товары:</h2>
+          <a class="red-button" href="#">Все популярные товары</a>
+        </header>
+
+        <!-- врезка товаров -->
+        <div class="offers">
+
+          <article>
+            <img src="#">
+            <h3><a href="#offer">Перфоратор BOSCH BFG 9000</a></h3>
+            <div class="old-price">32500 р.</div>
+            <div class="current-price"><a href="#offer">25500 р.</a></div>
+          </article>
+
+          <article>
+            <img src="#">
+            <h3><a href="#offer">Перфоратор BOSCH BFG 3000</a></h3>
+            <div class="old-price">22500 р.</div>
+            <div class="current-price"><a href="#offer">15500 р.</a></div>
+          </article>
+
+          <article>
+            <img src="#">
+            <h3><a href="#offer">Перфоратор BOSCH BFG 6000</a></h3>
+            <div class="old-price">30500 р.</div>
+            <div class="current-price"><a href="#offer">25500 р.</a></div>
+          </article>
+
+          <article class="new">
+            <img src="#">
+            <h3><a href="#offer">Перфоратор BOSCH BFG 2000</a></h3>
+            <div class="old-price"><noindex>empty</noindex></div>
+            <div class="current-price"><a href="#offer">12500 р.</a></div>
+          </article>
+
+        </div>
+
+      </section>
+
+      <section class="popular">
+        <header>
+          <h2>Популярные производители:</h2>
+          <a class="red-button" href="#">Все производители</a>
+        </header>
+
+        <!-- врезка производителей -->
+        <table class="vendors">
+          
+          <tr>
+            <td><a href="#bosch"><img src="#bosch"></a></td>
+            <td><a href="#makita"><img src="#makita"></a></td>
+            <td><a href="#dewalt"><img src="#dewalt"></a></td>
+            <td><a href="#interskol"><img src="#interskol"></a></td>
+          </tr>
+
+          <tr>
+            <td><a href="#hitachi"><img src="#hitachi"></a></td>
+            <td><a href="#lg"><img src="#lg"></a></td>
+            <td><a href="#aeg"><img src="#aeg"></a></td>
+            <td><a href="#metabo"><img src="#metabo"></a></td>
+          </tr>
+        </table>
+
+      </section>
+
+      <!-- сервисы -->
+      <section class="services">
+        <h3>Сервисы</h3>  
+        <p>
+          Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+
+        <div class="mashinka">
+          <ul class="menu">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Кредит</a></li>
+          </ul>
+
+          <div class="description">
+            <h2>Доставка</h2>
+
+            <p>Мы с удовольствием доставим ваш товар прямо 
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, 
+              поднимая его на ваш этаж!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- компания, контакты -->
+      <section class="contacts">
+        <div class="company">
+          <h2>Компания "Техномарт"</h2>
+
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+Техномарт работает со многими транспортными компаниями:</p>
+
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+
+          <a class="red-button" href="#">Подробнее о компании</a>
+        </div>
+
+        <div class="contacts">
+          <h2>Контакты</h2>
+
+          <p>Вы можете забрать товар сами, 
+заехав в наш офис:</p>
+
+          <img src="#map">
+
+          <a class="red-button" href="#">Заблудились? НапиШИТЕ НАМ!</a>
+        </div>
+      </section>
 
   	</main>
 
@@ -90,8 +217,8 @@
   		<!-- контакты плюс менюшка -->
   		<section class="footer-middle">
 			<ul class="contacts">
-				<li class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
-				<li class="telephone">+7 (812) 555-05-55</li>
+				<div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+				<div class="telephone">+7 (812) 555-05-55</div>
 			</ul>
 
 			<ul class="submenu">
