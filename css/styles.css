@@ -137,10 +137,6 @@ header {
 	/* opacity */
 }
 
-#top-menu a.bookmarks:active {
-	background-color: #161d29;
-}
-
 #top-menu a.bookmarks:active::before {
 	/* opacity */
 }
@@ -164,8 +160,9 @@ header {
 	/* opacity */
 }
 
-#top-menu a.basket:active {
+#top-menu a:active {
 	background-color: #161d29;
+	color: #97b685;
 }
 
 #top-menu a.basket:active::before {
@@ -249,18 +246,31 @@ header {
 	background: #fff;
 	color: black;
 	line-height: 45px;
-	text-align: center;
 	text-decoration: none;
 	font-size: 21px;
 }
 
 #autorization .register {
 	width: 150px;
-	margin-left: 10px;
+	text-align: center;
 }
 
 #autorization .login {
 	width: 121px;
+	margin-right: 10px;
+}
+
+#autorization .login::before {
+	content: url("../img/icon-login.png");
+	margin: 14px;
+}
+
+#autorization a:hover {
+	color: red;
+}
+
+#autorization a:active {
+	color: #dbdbdb;
 }
 
 
