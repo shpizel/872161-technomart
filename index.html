@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  	<link rel="stylesheet" href="css/styles.css">
+
   </head>
   <body>
 
@@ -13,29 +17,32 @@
 		3) менюшка
 		-->
   		<div class="top">
-  			<!-- лого, поиск, закладки, корзина, оформление заказа -->
-  			<div class="logo">
-  				Техномарт 
-  				<!-- думаю, такой логотип можно сверстать без картинки -->
-  			</div>
+  			<div class="wrap flex-row">
+				<!-- лого, поиск, закладки, корзина, оформление заказа -->
+				<div class="logo">
+					<a href="#/">Техномарт</a>
+				</div>
 
-  			<!-- поисковая форма -->
-  			<div class="search">
-  				Поиск: 
+				<!-- поисковая форма -->
+				<div class="search-top">
+					<form id="search-form" action="#/search" method="get">
+						<label>Поиск:<input type="text"></label>
+					</form> 
+				</div>
+				
+				<!-- правая менюшка -->
+				<ul id="top-menu">
+					<li><a class="bookmarks" href="#/bookmarks">Закладки: 0</a></li>
+					<li><a class="basket" href="#/basket">Корзина: 0</a></li>
+					<li><a class="checkout" href="#/checkout">Оформить заказ</a></li>
+				</ul>
   			</div>
-
-  			<!-- правая менюшка -->
-  			<ul>
-  				<li class="bookmarks"><a href="#bookmarks">Закладки: 0</a</li>
-  				<li class="basket"><a href="#basket">Корзина: 0</a></li>
-  				<li class="checkout"><a href="#checkout">Оформить заказ</a></li>
-  			</ul>
   		</div>
 
 		<!-- приветствие, адрес, телефон, вход, регистрация -->
-  		<div class="middle">
+  		<div class="middle wrap flex-row">
   			<div class="hello">
-          <!--  думаю на главной этой заголовок -->
+          		<!--  думаю на главной этой заголовок -->
   				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   			</div>
 
@@ -46,26 +53,25 @@
   			</div>
 
   			<!-- авторизация/регистрация -->
-  			<ul class="autorization">
-  				<li class="login">Войти</li>
-  				<li class="register">Регистрация</li>
+  			<ul id="autorization">
+  				<li><a class="login" href="#/login">Войти</a></li>
+  				<li><a class="register" href="#/register">Регистрация</a></li>
   			</ul>
   		</div>
 
-      <!-- менюшка -->
-  		<div class="sitemenu">
-  			<nav class="menu">
-  				<ul>
-	  				<li><a href="#main">Главная</a></li>
-	  				<li><a href="#about">Компания</a></li>
-	  				<li><a href="#catalog">Каталог</a></li>
-	  				<li><a href="#news">Новости</a></li>
-	  				<li><a href="#offers">Спецпредложения</a></li>
-	  				<li><a href="#delivery">Доставка</a></li>
-	  				<li><a href="#contacts">Контакты</a></li>
-  				</ul>
-  			</nav>
-  		</div>
+      	<!-- менюшка -->
+		<nav class="menu wrap">
+			<ul id="main-menu">
+				<li><a href="#main">Главная</a></li>
+				<li><a href="#about">Компания</a></li>
+				<li><a href="#catalog">Каталог</a></li>
+				<li><a href="#news">Новости</a></li>
+				<li><a href="#offers">Спецпредложения</a></li>
+				<li><a href="#delivery">Доставка</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+		</nav>
+  		
   	</header>
 
   	<main>
@@ -106,7 +112,7 @@
             </article> 
           </div>
 
-          <dic class="right">
+          <div class="right">
             <div class="first">
               <article class="discounts">
                 <h3>Скидки 50%</h3>
@@ -289,10 +295,10 @@
   			Все права защищены</p>
 
   			<ul class="social">
-  				<li class="vk"><a href="#vk">vk</a><li>
-  				<li class="fb"><a href="#fb">fb</a><li>
-  				<li class="instagram"><a href="#instagram">instagram</a><li>
-  			</ul>
+  				<li class="vk"><a href="#vk">vk</a></li>
+			  <li class="fb"><a href="#fb">fb</a></li>
+			  <li class="instagram"><a href="#instagram">instagram</a></li>
+		  </ul>
 
   			<ul class="contacts">
   				<li>
