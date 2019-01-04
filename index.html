@@ -3,152 +3,134 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-  	<link rel="stylesheet" href="css/styles.css">
-
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
   </head>
   <body>
+    <header>
+      <div class="top">
+        <div class="wrap flex-row">
+          <!-- лого, поиск, закладки, корзина, оформление заказа -->
+          <div class="logo">
+            <!-- на главной странице логотип не должен ссылаться на ту же страницу, т.е. href вообще не нужен -->
+            <!-- <a href="#">Техномарт</a> -->
+            <a>Техномарт</a>
+          </div>
 
-  	<header>
-  		<!-- заголовок будет содержать 3 уровня:
-		1) шапка
-		2) middle
-		3) менюшка
-		-->
-  		<div class="top">
-  			<div class="wrap flex-row">
-				<!-- лого, поиск, закладки, корзина, оформление заказа -->
-				<div class="logo">
-					<a href="#/">Техномарт</a>
-				</div>
+          <!-- поисковая форма -->
+          <div class="search-top">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <input placeholder="Поиск:" type="search">
+            <input type="submit">
+            </form>
+          </div>
 
-				<!-- поисковая форма -->
-				<div class="search-top">
-					<form id="search-form" action="#/search" method="get">
-						<input placeholder="Поиск:" type="search">
-					</form> 
-				</div>
-				
-				<!-- правая менюшка -->
-				<ul id="top-menu">
-					<li><a class="bookmarks" href="#/bookmarks">Закладки: 0</a></li>
-					<li><a class="basket" href="#/basket">Корзина: 0</a></li>
-					<li><a class="checkout" href="#/checkout">Оформить заказ</a></li>
-				</ul>
-  			</div>
-  		</div>
+          <!-- правая менюшка -->
+          <!-- todo: для стилизации id мы не используем, а другого применения в этом проекте у них нет (кроме инпутов) -->
+          <ul class="top-menu">
+            <li><a class="bookmarks" href="#/bookmarks">Закладки: 0</a></li>
+            <li><a class="basket" href="#/basket">Корзина: 0</a></li>
+            <li><a class="checkout" href="#/checkout">Оформить заказ</a></li>
+          </ul>
+        </div>
+      </div>
 
-		<!-- приветствие, адрес, телефон, вход, регистрация -->
-  		<div class="middle wrap flex-row">
-  			<div class="hello">
-          		<!--  думаю на главной этой заголовок -->
-  				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-  			</div>
+      <!-- приветствие, адрес, телефон, вход, регистрация -->
+      <div class="middle wrap flex-row">
+        <div class="hello">Интернет-магазин строительных материалов и инструментов для ремонта</div>
 
-  			<!-- блок контактов -->
-  			<div class="contacts">
-  				<div class="telephone">+7 (812) 555-05-55</div>
-  				<div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-  			</div>
-
-  			<!-- авторизация/регистрация -->
-  			<ul id="autorization">
-  				<li><a class="login" href="#/login">Войти</a></li>
-  				<li><a class="register" href="#/register">Регистрация</a></li>
-  			</ul>
-  		</div>
-
-      	<!-- менюшка -->
-		<nav class="menu wrap">
-			<ul id="main-menu">
-				<li><a href="#main">Главная</a></li>
-				<li><a href="#about">Компания</a></li>
-				<li><a href="#catalog">Каталог</a></li>
-				<li><a href="#news">Новости</a></li>
-				<li><a href="#offers">Спецпредложения</a></li>
-				<li><a href="#delivery">Доставка</a></li>
-				<li><a href="#contacts">Контакты</a></li>
-			</ul>
-		</nav>
-  		
-  	</header>
-
-  	<main>
-
-      <!-- трехстрочная и трехколоночная плитка -->
-      <section class="tile wrap">
-        <!-- первая строчка: Материалы, Инструмент, Техника -->
-        <div class="line_3_items">
-          <article class="materials new">
-            <h3>Материалы</h3>
-            <a href="#instruments">на любой вкус</a>
-          </article>
-
-          <article class="instruments">
-            <h3>Инструменты</h3>
-            <a href="#instruments">на все случаи</a>
-          </article>
-
-          <article class="technics">
-            <h3>Техника</h3>
-            <a href="#technics">для стройки</a>
-          </article>
+        <!-- блок контактов -->
+        <div class="contacts">
+          <div class="telephone">+7 (812) 555-05-55</div>
+          <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
         </div>
 
-        <!-- вторая строчка 2х2 -->
-        <div class="linex2">
-          
-          <div class="left">
+        <!-- авторизация/регистрация -->
+        <ul class="autorization">
+          <li><a class="login" href="#/login">Войти</a></li>
+          <li><a class="register" href="#/register">Регистрация</a></li>
+        </ul>
+      </div>
 
-            <article class="ruler">
+      <!-- менюшка -->
+      <nav class="menu wrap">
+        <ul class="main-menu">
+          <li><a href="#main">Главная</a></li>
+          <li><a href="#about">Компания</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#offers">Спецпредложения</a></li>
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- трехстрочная и трехколоночная плитка -->
+      <section class="categories wrap">
+        <!-- первая строчка: Материалы, Инструмент, Техника -->
+        <div class="categores-line">
+          <div class="category category-materials new">
+            <h3>Материалы</h3>
+            <a class="button" href="#instruments">на любой вкус</a>
+          </div>
+
+          <div class="category category-instruments">
+            <h3>Инструменты</h3>
+            <a class="button" href="#instruments">на все случаи</a>
+          </div>
+
+          <div class="category category-technics">
+            <h3>Техника</h3>
+            <a class="button" href="#technics">для стройки</a>
+          </div>
+        </div>
+
+        <div class="categories-line">
+          <div class="category-line">
+            <div class="category category-drill">
+              <!-- banner? -->
               <div class="gray">
                 <h3>Дрели</h3>
                 <span>Соседям на радость!</span>
               </div>
-              <a class="left">&lt;</a>
-              <a class="right">&gt;</a>
+
+              <a class="arrow-left" href="#left">&lt;</a>
+              <a class="arrow-right" href="#right">&gt;</a>
               <a class="red-button" href="#catalog">Открыть каталог</a>
-            </article> 
+            </div>
           </div>
 
-          <div class="right">
-            <div class="first">
-              <article class="discounts">
-                <h3>Скидки 50%</h3>
-                <a href="#discounts">на 350 товаров</a>
-              </article>
+          <div class="category-column">
+            <div class="category category-discounts">
+              <h3>Скидки 50%</h3>
+              <a class="button" href="#discounts">на 350 товаров</a>
             </div>
 
-            <div class="second">
-              <article class="delivery">
-                <h3>Доставка</h3>
-                <a href="#delivery">бесплатно</a>
-              </article>
+            <div class="category category-delivery">
+              <h3>Доставка</h3>
+              <a class="button" href="#delivery">бесплатно</a>
             </div>
           </div>
         </div>
-
       </section>
 
       <!-- популярные товары -->
       <section class="popular wrap">
-
         <header>
           <h2>Популярные товары:</h2>
           <a class="red-button" href="#">Все популярные товары</a>
         </header>
-
         <!-- врезка товаров -->
         <div class="offers">
-
           <article>
             <img src="#">
             <h3><a href="#offer">Перфоратор BOSCH BFG 9000</a></h3>
             <div class="old-price">32500 р.</div>
             <div class="current-price"><a href="#offer">25500 р.</a></div>
           </article>
-
           <article>
             <img src="#">
             <h3><a href="#offer">Перфоратор BOSCH BFG 3000</a></h3>
@@ -166,7 +148,9 @@
           <article class="new">
             <img src="#">
             <h3><a href="#offer">Перфоратор BOSCH BFG 2000</a></h3>
-            <div class="old-price"><noindex>empty</noindex></div>
+            <!-- <div class="old-price">
+              <noindex>empty</noindex>
+            </div> -->
             <div class="current-price"><a href="#offer">12500 р.</a></div>
           </article>
         </div>
@@ -180,47 +164,65 @@
         </header>
 
         <!-- врезка производителей (пока таблица потом флексы) -->
-        <table class="vendors">
-          
+        <!-- ну это сразу не таблица. можно разметить списком -->
+        <!-- <table class="vendors">
           <tr>
             <td><a href="#bosch"><img src="#bosch"></a></td>
             <td><a href="#makita"><img src="#makita"></a></td>
             <td><a href="#dewalt"><img src="#dewalt"></a></td>
             <td><a href="#interskol"><img src="#interskol"></a></td>
           </tr>
-
           <tr>
             <td><a href="#hitachi"><img src="#hitachi"></a></td>
             <td><a href="#lg"><img src="#lg"></a></td>
             <td><a href="#aeg"><img src="#aeg"></a></td>
             <td><a href="#metabo"><img src="#metabo"></a></td>
           </tr>
+        </table> -->
+
+        <ul class="vendors">
+          <li><a href="#bosch"><img src="#bosch"></a></li>
+          <li><a href="#makita"><img src="#makita"></a></li>
+          <li><a href="#dewalt"><img src="#dewalt"></a></li>
+          <li><a href="#interskol"><img src="#interskol"></a></li>
+          <li><a href="#hitachi"><img src="#hitachi"></a></li>
+          <li><a href="#lg"><img src="#lg"></a></li>
+          <li><a href="#aeg"><img src="#aeg"></a></li>
+          <li><a href="#metabo"><img src="#metabo"></a></li>
         </table>
 
       </section>
 
       <!-- сервисы -->
       <section class="services wrap">
-        <h3>Сервисы</h3>  
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
-        <div class="mashinka">
-          <ul class="menu">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
-          </ul>
+        <ul class="menu">
+          <li class="active"><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Кредит</a></li>
+        </ul>
 
+        <div class="delivery">
           <div class="description">
-            <h2>Доставка</h2>
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          </div>
+        </div>
 
-            <p>Мы с удовольствием доставим ваш товар прямо 
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, 
-              поднимая его на ваш этаж!</p>
+        <div class="guarantee hidden">
+          <div class="description">
+            <h3>Гарантия</h3>
+            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+          </div>
+        </div>
+
+        <div class="credit hidden">
+          <div class="description">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            <a class="red-button" href="#">Отправить заявку</a>
           </div>
         </div>
       </section>
@@ -229,87 +231,107 @@
       <section class="contacts wrap">
         <div class="company">
           <h2>Компания "Техномарт"</h2>
-
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-Техномарт работает со многими транспортными компаниями:</p>
-
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-
           <a class="red-button" href="#">Подробнее о компании</a>
         </div>
 
         <div class="contacts">
-          <h2>Контакты</h2>
-
-          <p>Вы можете забрать товар сами, 
-заехав в наш офис:</p>
-
-          <img src="#map">
-
+          <h3>Контакты</h3>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <div class="map"><img src="#map"></div>
           <a class="red-button" href="#">Заблудились? НапиШИТЕ НАМ!</a>
         </div>
       </section>
+    </main>
 
-  	</main>
+    <!-- нижнее меню и подвал  -->
+    <footer>
+      <!-- лого + менюшка -->
+      <section class="footer-top">
+        <div class="logo">
+          <!-- на главной странице логотип не должен ссылаться на ту же страницу, т.е. href вообще не нужен -->
+          <!-- <a href="#">Техномарт</a> -->
+          <a>Техномарт</a>
+        </div>
 
-	<!-- нижнее меню и подвал  -->
-  	<footer>
-  		<!-- лого + менюшка -->
-  		<section class="footer-top">
-  			<div class="logo"><a href="#">Техномарт</a></div>
+        <ul>
+          <li><a href="#about">Компания</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </section>
 
-  			<ul>
-  				<li><a href="#about">Компания</a></li>
-  				<li><a href="#news">Новост</a></li>
-  				<li><a href="#catalog">Катало</a></li>
-  				<li><a href="#delivery">Доставк</a></li>
-  				<li><a href="#contacts">Контакты</a></li>
-  			</ul>
-  		</section>
+      <!-- контакты плюс менюшка -->
+      <section class="footer-middle">
+        <div class="contacts">
+          <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+          <div class="telephone">+7 (812) 555-05-55</div>
+        </div>
 
-  		<!-- контакты плюс менюшка -->
-  		<section class="footer-middle">
-			<ul class="contacts">
-				<div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-				<div class="telephone">+7 (812) 555-05-55</div>
-			</ul>
+        <ul class="submenu">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </section>
 
-			<ul class="submenu">
-				<li><a href="#">Материалы</a></li>
-				<li><a href="#">Техника</a></li>
-				<li><a href="#">Инструмент</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-			</ul>
-  		</section>
+      <!-- копирайты и пр. -->
+      <section class="footer-bottom">
+        <p class="copyright">© 2010–2017 Компания «Техномарт»<span>Все права защищены</span></p>
 
-  		<!-- копирайты и пр. -->
-  		<section class="footer-bottom">
-  			<p class="copyright">© 2010–2017 Компания «Техномарт»<br>
-  			Все права защищены</p>
+        <ul class="social">
+          <li class="vk"><a href="#vk">vk</a></li>
+          <li class="fb"><a href="#fb">fb</a></li>
+          <li class="instagram"><a href="#instagram">instagram</a></li>
+        </ul>
 
-  			<ul class="social">
-  				<li class="vk"><a href="#vk">vk</a></li>
-			  	<li class="fb"><a href="#fb">fb</a></li>
-			  	<li class="instagram"><a href="#instagram">instagram</a></li>
-			</ul>
+        <ul class="contacts">
+          <li><span>Обратная связь:</span><a href="#">mail@htmlacademy.ru</a></li>
+          <li>Разработано — <a href="#">htmlacademy.ru</a></li>
+        </ul>
 
-  			<ul class="contacts">
-  				<li>
-  					Обратная связь:<br>
-  					<a href="#">mail@htmlacademy.ru</a>
-  				</li>
-  				<li>
-  					Разработано —<br>
-  					<a href="#">htmlacademy.ru</a>
-  				</li>
-  			</ul>
-  		</section>
-  	</footer>  	
+        <div id="map-popup" class="popup map-popup hidden">
+          <div class="map"></div>
+          <a class="close-popup"></a>
+        </div>
+
+        <div id="feedback-popup" id="feedback-popup hidden">
+          <form method="post" action="https://echo.htmlacademy.ru/">
+            <div>
+              <label></label>Ваше имя:<input type="text" name="firstname" placeholder="Имя Фамилия">
+              <label></label>Ваш email:<input type="text" name="email" placeholder="email@example.com">
+            </div>
+            <div>
+              <label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
+            </div>
+            <div class="send-feedback">
+              <input type="submit" value="Отправить" class="red-button">
+            </div>
+          </form>
+          <a class="close-popup"></a>
+        </div>
+
+        <!-- из каталога -->
+        <div id="cart-popup" id="cart-popup hidden">
+            <form method="post" action="https://echo.htmlacademy.ru/">
+              <div class="added">Товар добавлен в корзину!</div>
+              <div class="send-feedback">
+                <input type="submit" value="Отправить" class="red-button">
+                <button class="red-button white-button">Продолжить покупки</button>
+              </div>
+            </form>
+            <a class="close-popup"></a>
+          </div>
+      </section>
+    </footer>
   </body>
 </html>
