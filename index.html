@@ -51,6 +51,15 @@
           <li><a class="login" href="#/login">Войти</a></li>
           <li><a class="register" href="#/register">Регистрация</a></li>
         </ul>
+
+        <!-- личный кабинет -->
+        <div class="personal hidden">
+          <div class="personal-account"><span>Равшан Джамшутович</span><a href="#"><span class="hidden">Выйти из аккаунта</span></a></div>
+          <ul>
+            <li><a href="#">Мои заказы</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
       </div>
 
       <!-- менюшка -->
@@ -91,29 +100,38 @@
         <div class="categories-line">
           <div class="category-line">
             <div class="category category-drill">
-              <!-- banner? -->
-              <div class="gray">
-                <h3>Дрели</h3>
-                <span>Соседям на радость!</span>
-              </div>
+              <h3>Дрели</h3>
+              <span>Соседям на радость!</span>
 
               <a class="red-button" href="#catalog">Открыть каталог</a>
             </div>
 
-            <a class="arrow-left" href="#left">&lt;</a>
-            <a class="arrow-right" href="#right">&gt;</a>
+            <div class="category category-perforator">
+              <h3>Перфораторы</h3>
+              <span>Настоящие мужские игрушки</span>
+
+              <a class="red-button" href="#catalog">Открыть каталог</a>
+            </div>
           </div>
 
-          <div class="category-column">
-            <div class="category category-discounts">
-              <h3>Скидки 50%</h3>
-              <a class="button" href="#discounts">на 350 товаров</a>
-            </div>
+          <!-- кружочки-переключалки -->
+          <div class="bullet bullet-first"></div>
+          <div class="bullet bullet-second"></div>
 
-            <div class="category category-delivery">
-              <h3>Доставка</h3>
-              <a class="button" href="#delivery">бесплатно</a>
-            </div>
+          <!-- стрелочки -->
+          <a class="arrow-left" href="#left">&lt;</a>
+          <a class="arrow-right" href="#right">&gt;</a>
+        </div>
+
+        <div class="category-column">
+          <div class="category category-discounts">
+            <h3>Скидки 50%</h3>
+            <a class="button" href="#discounts">на 350 товаров</a>
+          </div>
+
+          <div class="category category-delivery">
+            <h3>Доставка</h3>
+            <a class="button" href="#delivery">бесплатно</a>
           </div>
         </div>
       </section>
@@ -129,31 +147,28 @@
           <article>
             <img src="#" alt="Перфоратор BOSCH BFG 9000">
             <h3><a href="#offer">Перфоратор BOSCH BFG 9000</a></h3>
-            <div class="old-price">32500 р.</div>
-            <div class="current-price"><a href="#offer">25500 р.</a></div>
+            <span class="old-price">32500 р.</span>
+            <span class="current-price"><a href="#offer">25500 р.</a></span>
           </article>
 
           <article>
             <img src="#" alt="Перфоратор BOSCH BFG 3000">
             <h3><a href="#offer">Перфоратор BOSCH BFG 3000</a></h3>
-            <div class="old-price">22500 р.</div>
-            <div class="current-price"><a href="#offer">15500 р.</a></div>
+            <span class="old-price">22500 р.</span>
+            <span class="current-price"><a href="#offer">15500 р.</a></span>
           </article>
 
           <article>
             <img src="#" alt="Перфоратор BOSCH BFG 6000">
             <h3><a href="#offer">Перфоратор BOSCH BFG 6000</a></h3>
-            <div class="old-price">30500 р.</div>
-            <div class="current-price"><a href="#offer">25500 р.</a></div>
+            <span class="old-price">30500 р.</span>
+            <span class="current-price"><a href="#offer">25500 р.</a></span>
           </article>
 
           <article class="new">
             <img src="#" alt="Перфоратор BOSCH BFG 2000">
             <h3><a href="#offer">Перфоратор BOSCH BFG 2000</a></h3>
-            <!-- <div class="old-price">
-              <noindex>empty</noindex>
-            </div> -->
-            <div class="current-price"><a href="#offer">12500 р.</a></div>
+            <span class="current-price"><a href="#offer">12500 р.</a></span>
           </article>
         </div>
       </section>
@@ -164,23 +179,6 @@
           <h2>Популярные производители:</h2>
           <a class="red-button" href="#">Все производители</a>
         </header>
-
-        <!-- врезка производителей (пока таблица потом флексы) -->
-        <!-- ну это сразу не таблица. можно разметить списком -->
-        <!-- <table class="vendors">
-          <tr>
-            <td><a href="#bosch"><img src="#bosch"></a></td>
-            <td><a href="#makita"><img src="#makita"></a></td>
-            <td><a href="#dewalt"><img src="#dewalt"></a></td>
-            <td><a href="#interskol"><img src="#interskol"></a></td>
-          </tr>
-          <tr>
-            <td><a href="#hitachi"><img src="#hitachi"></a></td>
-            <td><a href="#lg"><img src="#lg"></a></td>
-            <td><a href="#aeg"><img src="#aeg"></a></td>
-            <td><a href="#metabo"><img src="#metabo"></a></td>
-          </tr>
-        </table> -->
 
         <ul class="vendors">
           <li><a href="#bosch"><img alt="bosch logo" src="img/bosch.png"></a></li>
@@ -198,7 +196,7 @@
       <!-- сервисы -->
       <section class="services wrap">
         <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
         <ul class="menu">
           <li class="active"><a href="#">Доставка</a></li>
@@ -296,10 +294,10 @@
           <li class="instagram"><a href="#instagram">instagram</a></li>
         </ul>
 
-        <ul class="contacts">
-          <li><span>Обратная связь:</span><a href="#">mail@htmlacademy.ru</a></li>
-          <li>Разработано — <a href="#">htmlacademy.ru</a></li>
-        </ul>
+        <div class="contacts">
+          <p><span>Обратная связь:</span><a href="#">mail@htmlacademy.ru</a></p>
+          <p><span>Разработано — </span><a href="#">htmlacademy.ru</a></p>
+        </div>
 
         <div id="map-popup" class="popup map-popup hidden">
           <div class="map"></div>
@@ -324,15 +322,15 @@
 
         <!-- из каталога -->
         <div id="cart-popup" class="cart-popup hidden">
-            <form method="post" action="https://echo.htmlacademy.ru/">
-              <div class="added">Товар добавлен в корзину!</div>
-              <div class="send-feedback">
-                <input type="submit" value="Отправить" class="red-button">
-                <button class="red-button white-button">Продолжить покупки</button>
-              </div>
-            </form>
-            <a class="close-popup"></a>
-          </div>
+          <form method="post" action="https://echo.htmlacademy.ru/">
+            <div class="added">Товар добавлен в корзину!</div>
+            <div class="send-feedback">
+              <input type="submit" value="Отправить" class="red-button">
+              <button class="red-button white-button">Продолжить покупки</button>
+            </div>
+          </form>
+          <a class="close-popup"></a>
+        </div>
       </section>
     </footer>
   </body>
