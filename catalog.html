@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header>
+    <header class="display-none">
       <div class="top">
         <div class="wrap flex-row">
           <!-- лого, поиск, закладки, корзина, оформление заказа -->
@@ -58,6 +58,7 @@
             <li><a href="#">Личный кабинет</a></li>
           </ul>
         </div>
+      </div>
 
       <!-- менюшка -->
       <nav class="menu wrap">
@@ -73,7 +74,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="display-none">
       <ul class="breadcrumbs">
         <li class="home"><a href="#"><span class="hidden">home</span></a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -207,86 +208,88 @@
 
     <!-- нижнее меню и подвал  -->
     <footer>
-      <!-- лого + менюшка -->
-      <section class="footer-top">
-        <div class="logo">
-          <!-- на главной странице логотип не должен ссылаться на ту же страницу, т.е. href вообще не нужен -->
-          <!-- <a href="#">Техномарт</a> -->
-          <a>Техномарт</a>
-        </div>
-
-        <ul>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </section>
-
-      <!-- контакты плюс менюшка -->
-      <section class="footer-middle">
-        <div class="contacts">
-          <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-          <div class="telephone">+7 (812) 555-05-55</div>
-        </div>
-
-        <ul class="submenu">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
-      </section>
-
-      <!-- копирайты и пр. -->
-      <section class="footer-bottom">
-        <p class="copyright">© 2010–2017 Компания «Техномарт»<span>Все права защищены</span></p>
-
-        <ul class="social">
-          <li class="vk"><a href="#">vk</a></li>
-          <li class="fb"><a href="#">fb</a></li>
-          <li class="instagram"><a href="#">instagram</a></li>
-        </ul>
-
-        <div class="contacts">
-          <p><span>Обратная связь:</span><a href="#">mail@htmlacademy.ru</a></p>
-          <p><span>Разработано — </span><a href="#">htmlacademy.ru</a></p>
-        </div>
-
-        <div id="map-popup" class="popup map-popup hidden">
-          <div class="map"></div>
-          <a class="close-popup"></a>
-        </div>
-
-        <div id="feedback-popup" class="feedback-popup hidden">
-          <form method="post" action="https://echo.htmlacademy.ru/">
-            <div>
-              <label>Ваше имя:<input type="text" name="firstname" placeholder="Имя Фамилия"></label>
-              <label>Ваш email:<input type="text" name="email" placeholder="email@example.com"></label>
+        <section class="footer-top">
+          <div class="footer-wrapper">
+            <div class="logo">
+              <a>Техномарт</a>
             </div>
-            <div>
-              <label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
-            </div>
-            <div class="send-feedback">
-              <input type="submit" value="Отправить" class="red-button">
-            </div>
-          </form>
-          <a class="close-popup"></a>
-        </div>
 
-        <!-- из каталога -->
-        <div id="cart-popup" class="cart-popup hidden">
-          <form method="post" action="https://echo.htmlacademy.ru/">
-            <div class="added">Товар добавлен в корзину!</div>
-            <div class="send-feedback">
-              <input type="submit" value="Отправить" class="red-button">
-              <button class="red-button white-button">Продолжить покупки</button>
+            <ul class="footer-top-menu">
+              <li class="footer-top-menu-item"><a href="#">Компания</a></li>
+              <li class="footer-top-menu-item"><a href="#">Новости</a></li>
+              <li class="footer-top-menu-item"><a href="catalog.html">Каталог</a></li>
+              <li class="footer-top-menu-item"><a href="#">Доставка</a></li>
+              <li class="footer-top-menu-item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer-middle">
+          <div class="footer-wrapper">
+            <div class="footer-middle-contacts">
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              +7 (812) 555-05-55</p>
             </div>
-          </form>
-          <a class="close-popup"></a>
-        </div>
-      </section>
-    </footer>
-  </body>
-</html>
+
+            <ul class="footer-middle-menu">
+              <li class="footer-middle-menu-item"><a href="#">Материалы</a></li>
+              <li class="footer-middle-menu-item"><a href="#">Техника</a></li>
+              <li class="footer-middle-menu-item"><a href="#">Инструмент</a></li>
+              <li class="footer-middle-menu-item"><a href="#">Спецпредложения</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- копирайты и пр. -->
+        <section class="footer-bottom">
+          <div class="footer-wrapper">
+            <p class="footer-bottom-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
+
+            <ul class="footer-bottom-social">
+              <li class="social-item-vk"><a href="#"><span class="visibility-hidden">vk</span></a></li>
+              <li class="social-item-fb"><a href="#"><span class="visibility-hidden">fb</span></a></li>
+              <li class="social-item-instagram"><a href="#"><span class="visibility-hidden">instagram</span></a></li>
+            </ul>
+
+            <div class="footer-bottom-contacts">
+              <p><span>Обратная связь:</span><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+              <p><span>Разработано —</span><a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
+            </div>
+
+            <div id="map-popup" class="popup map-popup display-none">
+              <div class="map"></div>
+              <a class="close-popup"></a>
+            </div>
+
+            <div id="feedback-popup" class="feedback-popup display-none">
+              <form method="post" action="https://echo.htmlacademy.ru/">
+                <div>
+                  <label>Ваше имя:<input type="text" name="firstname" placeholder="Имя Фамилия"></label>
+                  <label>Ваш email:<input type="text" name="email" placeholder="email@example.com"></label>
+                </div>
+                <div>
+                  <label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
+                </div>
+                <div class="send-feedback">
+                  <input type="submit" value="Отправить" class="red-button">
+                </div>
+              </form>
+              <a class="close-popup"></a>
+            </div>
+
+            <!-- из каталога -->
+            <div id="cart-popup" class="cart-popup display-none">
+              <form method="post" action="https://echo.htmlacademy.ru/">
+                <div class="added">Товар добавлен в корзину!</div>
+                <div class="send-feedback">
+                  <input type="submit" value="Отправить" class="red-button">
+                  <button class="red-button white-button">Продолжить покупки</button>
+                </div>
+              </form>
+              <a class="close-popup"></a>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </body>
+  </html>
