@@ -193,7 +193,7 @@
 
           <div class="services-interactive">
             <ul class="services-menu">
-              <li class="services-menu-item"><a class="active" href="#">Доставка</a></l>
+              <li class="services-menu-item"><a class="active" href="#">Доставка</a></li>
               <li class="services-menu-item"><a href="#">Гарантия</a></li>
               <li class="services-menu-item"><a href="#">Кредит</a></li>
             </ul>
@@ -306,26 +306,18 @@
           <div id="feedback-popup" class="feedback-popup display-none">
             <form method="post" action="https://echo.htmlacademy.ru/">
               <div>
-                <label>Ваше имя:<input type="text" name="firstname" placeholder="Имя Фамилия"></label>
-                <label>Ваш email:<input type="text" name="email" placeholder="email@example.com"></label>
+                <label for="feedback-popup-firstname">Ваше имя:</label>
+                <input id="feedback-popup-firstname" type="text" name="firstname" placeholder="Имя Фамилия">
+
+                <label for="feedback-popup-email">Ваш email:</label>
+                <input id="feedback-popup-email" type="text" name="email" placeholder="email@example.com">
               </div>
               <div>
-                <label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
+                <label for="feedback-popup-letter">Текст письма:</label>
+                <textarea id="feedback-popup-letter" name="letter" placeholder="В свободной форме"></textarea>
               </div>
               <div class="send-feedback">
-                <input type="submit" value="Отправить" class="red-button">
-              </div>
-            </form>
-            <button class="close-popup"><span>Закрыть</span></button>
-          </div>
-
-          <!-- из каталога -->
-          <div id="cart-popup" class="cart-popup display-none">
-            <form method="post" action="https://echo.htmlacademy.ru/">
-              <div class="added">Товар добавлен в корзину!</div>
-              <div class="send-feedback">
-                <input type="submit" value="Отправить" class="red-button">
-                <button class="red-button white-button">Продолжить покупки</button>
+                <button type="submit" class="red-button">Отправить</button>
               </div>
             </form>
             <button class="close-popup"><span>Закрыть</span></button>
