@@ -1,155 +1,152 @@
-/* Стили основной части */
 main {
-	/* margin-top: 59px; */
+  /* margin-top: 59px; */
 }
 
 /* .line_3_items {
-	display: flex;
+display: flex;
 }
 
 .line_3_items > *,
 .right > *
 {
-	margin-right: 20px;
-	width: 300px;
+margin-right: 20px;
+width: 300px;
 
-	height: 123px;
+height: 123px;
 }
 
 .line_3_items > *,
 .right > *:not(:last-child) {
-	margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 
 .line_3_items > *:last-child {
-	margin-right: 0px;
+margin-right: 0px;
 }
 
 .line_3_items h3, .right h3 {
-	font-size: 24px;
-	line-height: 30px;
-	color: white;
-	margin-top: 26px;
-	margin-left: 23px;
+font-size: 24px;
+line-height: 30px;
+color: white;
+margin-top: 26px;
+margin-left: 23px;
 }
 
 .materials {
-	background-color: #ffbf47;
+background-color: #ffbf47;
 }
 
 .materials .button {
-	background-color: #e5ac40;
+background-color: #e5ac40;
 }
 
 .instruments {
-	background-color: #3bbce3;
+background-color: #3bbce3;
 }
 
 .instruments .button {
-	background-color: #35a9cc;
+background-color: #35a9cc;
 }
 
 .technics {
-	background-color: #dc91d8;
+background-color: #dc91d8;
 }
 
 .technics .button {
-	background-color: #c682c2;
+background-color: #c682c2;
 }
 
 .discounts {
-	background-color: #8ed78f;
+background-color: #8ed78f;
 }
 
 .discounts .button {
-	background-color: #80c180;
+background-color: #80c180;
 }
 
 .delivery {
-	background-color: #ffc047;
+background-color: #ffc047;
 }
 
 .delivery .button {
-	background-color: #e5ac40;
+background-color: #e5ac40;
 }
 
 .line_3_items .button, .right .button {
-	width: 135px;
-	font-size: 14px;
-	line-height: 38px; /* 18px */
-	color: white;
-	text-transform: uppercase;
-	margin-left: 25px;
-	height: 38px;
-	display: block;
-	text-align: center;
+width: 135px;
+font-size: 14px;
+line-height: 38px;
+color: white;
+text-transform: uppercase;
+margin-left: 25px;
+height: 38px;
+display: block;
+text-align: center;
 }
 
 .linex2 {
-	display: flex;
+display: flex;
 }
 
 .linex2 .left {
-	width: 620px;
-	margin-right: 20px;
+width: 620px;
+margin-right: 20px;
 }
 
 .linex2 .right {
-	width: 300px;
-	display: flex;
-    flex-direction: column;
-} */
+width: 300px;
+display: flex;
+  flex-direction: column;
+}
 
-/*
 .linex2 .right > *:last-child {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 */
 
 .ruler {
-	background-image: url(../img/drill.jpg);
-	padding-left: 24px;
-	margin-top: 0px;
-	height: 266px;
-	position: relative;
-	display: flex;
-	flex-direction: column;
+  background-image: url(../img/drill.jpg);
+  padding-left: 24px;
+  margin-top: 0px;
+  height: 266px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .ruler h3 {
-	font-size: 36px;
-	line-height: 36px;
-	color: white;
-	margin: 0;
-	margin-bottom: 8px;
-
-/*	margin-left: 24px;*/
-    margin-top: 27px;
+  font-size: 36px;
+  line-height: 36px;
+  color: white;
+  margin: 0;
+  margin-bottom: 8px;
+  /*	margin-left: 24px;*/
+  margin-top: 27px;
 }
 
 .ruler span {
-	font-size: 18px;
-	line-height: 24px;
-	color: white;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
 }
 
 .ruler .red-button {
-	position: absolute;
-	bottom: 22px;
-	left: 25px;
+  position: absolute;
+  bottom: 22px;
+  left: 25px;
 }
 
 .red-button {
-	background-color: #ee3643;
-	text-transform: uppercase;
-	color: white;
-	font-size: 14px;
-	line-height: 38px;
-	height: 38px;
-	display: block;
-	width: 185px;
-	text-align: center;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  line-height: 38px;
+  height: 38px;
+  display: block;
+  width: 185px;
+  text-align: center;
   border-radius: 3px;
   text-decoration: none;
 }
@@ -163,88 +160,88 @@ main {
 }
 
 .ruler .arrow-left {
-	width: 22px;
-	height: 40px;
-	background-image: url(../img/icon-left.svg)
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icon-left.svg)
 }
 
 .ruler .arrow-right {
-	width: 22px;
-	height: 40px;
-	background-image: url(../img/icon-right.svg)
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icon-right.svg)
 }
 
 .popular header {
-	height: 89px;
-	/* display: flex; */
-	/* justify-content: space-between; */
+  height: 89px;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 .popular header h2 {
-	margin: 0;
-	line-height: 89px;
-	margin-left: 30px;
-	text-transform: uppercase;
-	font-size: 30px;
+  margin: 0;
+  line-height: 89px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
 .popular header a {
-	margin-top: 25px;
-	margin-right: 24px;
+  margin-top: 25px;
+  margin-right: 24px;
 }
 
 .offers {
-  display: flex;
+  /* display: flex;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 
-article.offer {
+.offer {
   box-sizing: border-box;
-	width: 220px;
-	height: 318px;
-	border: #eaeaea 1px solid;
+  width: 220px;
+  height: 318px;
+  border: #eaeaea 1px solid;
 }
 
-article.offer:not(:last-child) {
-	margin-right: 20px;
+.offer:not(:last-child) {
+  margin-right: 20px;
 }
 
-article.offer h3 {
-	width: 191px;
+.offer h3 {
+  width: 191px;
   margin: 0;
   margin-left: 15px;
-	text-align: center;
-	color: black;
-	font-size: 18px;
-	line-height: 20px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  line-height: 20px;
 }
 
-article.offer a.offer-name-link {
+.offer .offer-name-link {
   text-decoration: none;
   color: black;
 }
 
 .offer-old-price {
   display: block;
-	font-size: 17px;
-	line-height: 18px;
-	text-align: center;
-	color: #a9a9a9;
-	font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #a9a9a9;
+  font-weight: bold;
   text-decoration: line-through;
 }
 
 .offer-current-price {
-	margin-left: 40px;
-	width: 141px;
-	height: 38px;
-	line-height: 38px;
-	color: white;
-	font-size: 18px;
-	font-weight: bold;
-	text-align: center;
-	position: relative;
+  margin-left: 40px;
+  width: 141px;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
   background-color: #ee3643;
   display: block;
 }
@@ -267,19 +264,18 @@ article.offer a.offer-name-link {
   border-left:solid #ee3643 19px;
 }
 
-/* 06.01 */
-section.services {
+.services {
   background-color: #f4f7f9;
-  padding-top: 68px;
+  /* padding-top: 68px; */
 }
 
-section.services h2 {
+.services h2 {
   font-size: 30px;
   line-height: 30px;
   color: black;
 }
 
-section.services p {
+.services p {
   margin: 0;
   padding: 0;
   font-size: 13px;
@@ -315,7 +311,7 @@ section.services p {
   text-decoration: none;
 }
 
-.services-menu-item a.active {
+.services-menu-item .active {
   background-color: white;
   color: #32425c;
   border: none;
@@ -356,8 +352,6 @@ section.services p {
   background: url("../img/credit.png") no-repeat right bottom;
 }
 
-/* 05.01 */
-
 .vendors-list {
   padding: 0;
   margin: 0;
@@ -377,27 +371,25 @@ section.services p {
   border: #eaeaea 1px solid;
   margin-left: 20px;
   margin-bottom: 20px;
-
 }
 
 .vendors-list-item a {
-  display: flex;
+  /* display: flex;
   height: 145px;
-  width: 220px;
+  width: 220px; */
 }
 
 .vendors-list-item img {
   margin: auto;
 }
 
-/* контакты */
-section.contacts {
-  display: flex;
+.contacts {
+  /* display: flex;
   margin-top: 82px;
-  margin-bottom: 86px;
+  margin-bottom: 86px; */
 }
 
-section.contacts .contacts-company-left {
+.contacts .contacts-company-left {
   width: 535px;
   margin-right: 110px;
 }
@@ -415,11 +407,12 @@ section.contacts .contacts-company-left {
 }
 
 .contacts-company .advantages {
-  /* color: orange; */
-  font-size: 18px;
-  line-height: 20px;
   list-style: inside;
   margin: 0;
   padding: 0;
-  margin-bottom: 37px;
+
+  font-size: 18px;
+  line-height: 20px;
+
+  /* margin-bottom: 37px; */
 }

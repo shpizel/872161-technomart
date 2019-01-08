@@ -1,4 +1,7 @@
-/* Стили подвала */
+footer {
+  font-family: 'Cuprum', sans-serif;
+}
+
 .footer-top,
 .footer-middle {
   background-color: #32425c;
@@ -21,8 +24,8 @@
 }
 
 .footer-top-menu {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   /* display: flex; */
   list-style: none;
   /* flex-grow: 1; */
@@ -78,7 +81,7 @@
 .footer-middle-menu {
   list-style: none;
   margin: 0;
-	padding: 0;
+  padding: 0;
   /* display: flex;
   flex-grow: 1;
   justify-content: space-between;*/
@@ -108,7 +111,9 @@
   margin: 0;
   padding: 0;
   color: white;
-  width: 250px; /* в макете 260 px */
+  font-size: 18px;
+  line-height: 24px;
+  /* width: 250px; в макете 260 px */
   font-weight: 600; /* semibold */
 }
 
@@ -153,7 +158,7 @@
 .footer-bottom-social  {
   list-style: none;
   margin: 0;
-	padding: 0;
+  padding: 0;
   /* display: flex; */
   /* flex-grow: 1; */
   /* justify-content: center; */
@@ -170,7 +175,7 @@
 
 .footer-bottom-social a:hover,
 .footer-bottom-social a:active
- {
+{
   background-color: #ee3643;
 }
 
