@@ -1,0 +1,18 @@
+/* Общие стили */
+
+* {
+	font-family: 'Cuprum', sans-serif;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.display-none {
+  display: none;
+}

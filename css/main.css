@@ -1,0 +1,425 @@
+/* Стили основной части */
+main {
+	/* margin-top: 59px; */
+}
+
+/* .line_3_items {
+	display: flex;
+}
+
+.line_3_items > *,
+.right > *
+{
+	margin-right: 20px;
+	width: 300px;
+
+	height: 123px;
+}
+
+.line_3_items > *,
+.right > *:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+
+.line_3_items > *:last-child {
+	margin-right: 0px;
+}
+
+.line_3_items h3, .right h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: white;
+	margin-top: 26px;
+	margin-left: 23px;
+}
+
+.materials {
+	background-color: #ffbf47;
+}
+
+.materials .button {
+	background-color: #e5ac40;
+}
+
+.instruments {
+	background-color: #3bbce3;
+}
+
+.instruments .button {
+	background-color: #35a9cc;
+}
+
+.technics {
+	background-color: #dc91d8;
+}
+
+.technics .button {
+	background-color: #c682c2;
+}
+
+.discounts {
+	background-color: #8ed78f;
+}
+
+.discounts .button {
+	background-color: #80c180;
+}
+
+.delivery {
+	background-color: #ffc047;
+}
+
+.delivery .button {
+	background-color: #e5ac40;
+}
+
+.line_3_items .button, .right .button {
+	width: 135px;
+	font-size: 14px;
+	line-height: 38px; /* 18px */
+	color: white;
+	text-transform: uppercase;
+	margin-left: 25px;
+	height: 38px;
+	display: block;
+	text-align: center;
+}
+
+.linex2 {
+	display: flex;
+}
+
+.linex2 .left {
+	width: 620px;
+	margin-right: 20px;
+}
+
+.linex2 .right {
+	width: 300px;
+	display: flex;
+    flex-direction: column;
+} */
+
+/*
+.linex2 .right > *:last-child {
+	margin-top: 20px;
+}
+*/
+
+.ruler {
+	background-image: url(../img/drill.jpg);
+	padding-left: 24px;
+	margin-top: 0px;
+	height: 266px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.ruler h3 {
+	font-size: 36px;
+	line-height: 36px;
+	color: white;
+	margin: 0;
+	margin-bottom: 8px;
+
+/*	margin-left: 24px;*/
+    margin-top: 27px;
+}
+
+.ruler span {
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+}
+
+.ruler .red-button {
+	position: absolute;
+	bottom: 22px;
+	left: 25px;
+}
+
+.red-button {
+	background-color: #ee3643;
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	line-height: 38px;
+	height: 38px;
+	display: block;
+	width: 185px;
+	text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.red-button:hover {
+  background-color: #ca2c37;
+}
+
+.red-button:active {
+  background-color: #ba2732;
+}
+
+.ruler .arrow-left {
+	width: 22px;
+	height: 40px;
+	background-image: url(../img/icon-left.svg)
+}
+
+.ruler .arrow-right {
+	width: 22px;
+	height: 40px;
+	background-image: url(../img/icon-right.svg)
+}
+
+.popular header {
+	height: 89px;
+	/* display: flex; */
+	/* justify-content: space-between; */
+}
+
+.popular header h2 {
+	margin: 0;
+	line-height: 89px;
+	margin-left: 30px;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.popular header a {
+	margin-top: 25px;
+	margin-right: 24px;
+}
+
+.offers {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+article.offer {
+  box-sizing: border-box;
+	width: 220px;
+	height: 318px;
+	border: #eaeaea 1px solid;
+}
+
+article.offer:not(:last-child) {
+	margin-right: 20px;
+}
+
+article.offer h3 {
+	width: 191px;
+  margin: 0;
+  margin-left: 15px;
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+article.offer a.offer-name-link {
+  text-decoration: none;
+  color: black;
+}
+
+.offer-old-price {
+  display: block;
+	font-size: 17px;
+	line-height: 18px;
+	text-align: center;
+	color: #a9a9a9;
+	font-weight: bold;
+  text-decoration: line-through;
+}
+
+.offer-current-price {
+	margin-left: 40px;
+	width: 141px;
+	height: 38px;
+	line-height: 38px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+  background-color: #ee3643;
+  display: block;
+}
+
+.offer-current-price a {
+  color: white;
+  width: 122px;
+  height: 38px;
+  display: block;
+}
+
+.offer-current-price a::after {
+  position: absolute;
+  right: -19px;
+  content: "";
+  box-sizing: border-box;
+  width: 1px;
+  height: 1px;
+  border: solid white 19px;
+  border-left:solid #ee3643 19px;
+}
+
+/* 06.01 */
+section.services {
+  background-color: #f4f7f9;
+  padding-top: 68px;
+}
+
+section.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: black;
+}
+
+section.services p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 240px;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  margin-right: 80px;
+}
+
+.services-menu-item {
+  box-sizing: border-box;
+}
+
+.services-menu-item a {
+  display: block;
+  font-size: 21px;
+  line-height: 61px; /* 30px по макету */
+  padding-left: 22px;
+  height: 61px;
+  color: white;
+  background-color: #32425c;
+  border-bottom: #4e637c 1px solid;
+}
+
+.services-menu-item a:link {
+  text-decoration: none;
+}
+
+.services-menu-item a.active {
+  background-color: white;
+  color: #32425c;
+  border: none;
+}
+
+.services-interactive {
+  /* display: flex; */
+}
+
+.services-interactive > div {
+  /* flex-grow: 1; */
+}
+
+.services-interactive h3 {
+  padding: 0;
+  margin: 0;
+  color: #32425c;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.services-interactive p {
+  font-size: 13px;
+  line-height: 24px;
+  width: 311px;
+}
+
+.service-delivery {
+  background: url("../img/truck.png") no-repeat right bottom;
+}
+
+.service-guarantee {
+  background: url("../img/guarantee.png") no-repeat right bottom;
+}
+
+.service-credit {
+  background: url("../img/credit.png") no-repeat right bottom;
+}
+
+/* 05.01 */
+
+.vendors-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+
+  flex-wrap: wrap;
+  margin-left: -20px; /* dirty hack */
+  margin-bottom: 65px; /*85-20;*/
+  margin-top: 20px;
+}
+
+.vendors-list-item {
+  box-sizing: border-box;
+  width: 220px;
+  height: 145px;
+  border: #eaeaea 1px solid;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+}
+
+.vendors-list-item a {
+  display: flex;
+  height: 145px;
+  width: 220px;
+}
+
+.vendors-list-item img {
+  margin: auto;
+}
+
+/* контакты */
+section.contacts {
+  display: flex;
+  margin-top: 82px;
+  margin-bottom: 86px;
+}
+
+section.contacts .contacts-company-left {
+  width: 535px;
+  margin-right: 110px;
+}
+
+.contacts-company h2,
+.contacts-company h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts-company p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.contacts-company .advantages {
+  /* color: orange; */
+  font-size: 18px;
+  line-height: 20px;
+  list-style: inside;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 37px;
+}
