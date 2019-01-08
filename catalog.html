@@ -93,8 +93,8 @@
                   <div class="active-line"></div>
                 </div>
 
-                <span class="bullet"></span>
-                <span class="bullet"></span>
+                <button class="bullet"><span class="visually-hidden">Цена от</span></button>
+                <button class="bullet"><span class="visually-hidden">Цена до</span></button>
               </div>
 
               <div class="price-controls">
@@ -108,11 +108,11 @@
               <legend>Производители:</legend>
 
               <ul>
-                <li><label><input checked type="checkbox" name="vendor" value="bosch">Bosch</label></li>
-                <li><label><input type="checkbox" name="vendor" value="interskol">Интерскол</label></li>
-                <li><label><input checked type="checkbox" name="vendor" value="makita">Makita</label></li>
-                <li><label><input type="checkbox" name="vendor" value="dewalt">Dewalt</label></li>
-                <li><label><input type="checkbox" name="vendor" value="hitachi">Hitachi</label></li>
+                <li><label><input type="checkbox" checked class="visually-hidden" name="vendor" value="bosch">Bosch</label></li>
+                <li><label><input type="checkbox" class="visually-hidden" name="vendor" value="interskol">Интерскол</label></li>
+                <li><label><input checked type="checkbox" class="visually-hidden" name="vendor" value="makita">Makita</label></li>
+                <li><label><input type="checkbox" class="visually-hidden" name="vendor" value="dewalt">Dewalt</label></li>
+                <li><label><input type="checkbox" class="visually-hidden" name="vendor" value="hitachi">Hitachi</label></li>
               </ul>
             </fieldset>
 
@@ -122,8 +122,8 @@
               <legend>Питание:</legend>
 
               <ul>
-                <li><label><input type="radio" name="power" value="accum">Аккумуляторные</label></li>
-                <li><label><input type="radio" name="power" value="electricity">Сетевые</label></li>
+                <li><label><input type="radio" class="visually-hidden" name="power" value="accum">Аккумуляторные</label></li>
+                <li><label><input type="radio" class="visually-hidden" name="power" value="electricity">Сетевые</label></li>
               </ul>
             </fieldset>
 
@@ -144,7 +144,7 @@
             <ul>
               <li><a class="asc" href="#"><span class="visually-hidden">asc</span></a></li>
               <li><a class="desc" href="#"><span class="visually-hidden">desc</span></a></li>
-              </ul>
+            </ul>
           </div>
         </div>
 
