@@ -1,5 +1,5 @@
 footer {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
 }
 
 .footer-top,
@@ -41,7 +41,7 @@ footer {
   color: #f3f7f9;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .footer-top-menu a:link,
@@ -75,7 +75,7 @@ footer {
 }
 
 .footer-middle-contacts p {
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .footer-middle-menu {
@@ -91,7 +91,7 @@ footer {
   color: #ffd180;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .footer-middle-menu-item a { /* :link? */
@@ -110,11 +110,11 @@ footer {
 .footer-bottom-copyright {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #ffffff;
   font-size: 18px;
   line-height: 24px;
   /* width: 250px; в макете 260 px */
-  font-weight: 600; /* semibold */
+  /* font-weight: 600; semibold */
 }
 
 .footer-bottom {
@@ -124,7 +124,7 @@ footer {
 
 .footer-bottom-contacts {
   /* display: flex; */
-  font-weight: 600; /* semibold */
+  /* font-weight: 600; semibold */
 }
 
 .footer-bottom-contacts p {
@@ -132,7 +132,7 @@ footer {
   margin: 0;
   font-size: 16px;
   line-height: 18px;
-  color: white;
+  color: #ffffff;
 }
 
 /* .footer-bottom-contacts p:nth-last-child(1) {
