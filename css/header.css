@@ -1,6 +1,8 @@
 header {
   background: #f4f7f9;
   font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .header-wrapper {
@@ -29,7 +31,6 @@ header {
   display: block;
   width: 220px;
   height: 42px;
-  line-height: 42px;
 }
 
 .logo a:link {
@@ -45,26 +46,36 @@ header {
 }
 
 .search-top {
-  width: 270px;
-  font-size: 17px;
-  color: #ffffff;
-  /* position: relative; */
+  background-color: rgb(33, 41, 57);
 }
 
-.search-top input[type="search"] {
+.search-form {
+  position: relative;
+}
+
+.search-form input[type="text"] {
   border: 0;
   margin: 0;
-  line-height: 18px;
+  width: 270px;
   font-size: 17px;
-  /* width: 270px; */
-  /* padding-left: 48px; */
-  /* height: 42px; */
+  line-height: 18px;
+  padding-left: 48px;
+  outline: 0;
+  background: rgb(33, 41, 57);
   color: #ffffff;
-  /* outline: 0; */
 }
 
-.search-top input[type="search"]:focus:not(:hover) + button svg {
+.search-form input[type="text"] + button svg {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+.search-form input[type="text"]:hover:not(:focus) + button svg {
+  opacity: 1.0;
+}
+
+.search-top input[type="text"]:focus + button svg {
   fill: red;
+  opacity: 1.0;
 }
 
 .search-form-submit {
@@ -107,12 +118,12 @@ header {
 }
 
 .top-menu li {
-  width: 150px;
   margin: 0;
   padding: 0;
 }
 
 .top-menu li a {
+  width: 150px;
   font-size: 17px;
   line-height: 18px;
   display: block;
@@ -120,10 +131,23 @@ header {
   color: #ffffff;
 }
 
-/* .top-menu .bookmarks {} */
+.top-menu-item a {
+  position: relative;
+  padding-left: 25px;
+}
+
+.top-menu .bookmarks {
+
+}
 
 .top-menu .bookmarks::before {
-  background-image: url(../img/icon-bookmark.svg) no-repeat left center;
+  display:block;
+  content: "";
+  background: url(../img/icon-bookmark.svg) no-repeat left center;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 1px;
   opacity: 0.3;
 }
 
@@ -142,9 +166,13 @@ header {
 /* .top-menu .basket {} */
 
 .top-menu .basket::before {
-  background: url(../img/cart-icon.svg) no-repeat;
-  /* margin-right: 15px;
-  margin-left: 19px; */
+  display:block;
+  content: "";
+  background: url(../img/icon-cart.svg) no-repeat left center;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 1px;
   opacity: 0.3;
 }
 
@@ -265,11 +293,19 @@ header {
 }
 
 .personal .username::before {
-  background: url("../img/icon-user.svg") no-repeat;
+  background: url("../img/icon-user.svg") no-repeat left center;
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
 }
 
-.personal .username::after {
-  content: url("../img/icon-logout.svg");
+.personal .logout::before {
+  background: url("../img/icon-logout.svg") no-repeat left center;
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
 }
 
 .personal .register {
@@ -279,12 +315,23 @@ header {
 
 .personal .login {
   /* width: 121px; */
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .personal .login::before {
-  content: url("../img/icon-login.png");
-  /* margin: 14px; */
+  background: url("../img/icon-login.png") no-repeat left center;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.personal .login:hover::before {
+  /* непонятно как покрасить в темный цвет только если inline вставлять */
+}
+
+.personal .login:active::before {
+  /* непонятно как покрасить в темный цвет только если inline вставлять */
 }
 
 .personal a:hover {

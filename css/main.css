@@ -103,7 +103,6 @@ display: flex;
 .linex2 .right > *:last-child {
   margin-top: 20px;
 }
-*/
 
 .ruler {
   background-image: url(../img/drill.jpg);
@@ -135,7 +134,7 @@ display: flex;
   position: absolute;
   bottom: 22px;
   left: 25px;
-}
+}*/
 
 .red-button {
   background-color: #ee3643;
@@ -387,6 +386,10 @@ display: flex;
   /* display: flex;
   margin-top: 82px;
   margin-bottom: 86px; */
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .contacts .contacts-company-left {
