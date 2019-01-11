@@ -4,6 +4,7 @@ body {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -26,6 +27,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.display-none {
+.display-none, .hidden {
   display: none;
 }

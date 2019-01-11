@@ -29,8 +29,8 @@
 
           <ul class="top-menu">
             <!-- todo .active -->
-            <li class="top-menu-item"><a class="bookmarks" href="#">Закладки: <span class="bookmarks-count">0</span></a></li>
-            <li class="top-menu-item"><a class="basket" href="#">Корзина: <span class="basket-size">0</span></a></li>
+            <li class="top-menu-item"><a class="bookmarks active" href="#">Закладки:<span class="bookmarks-count">0</span></a></li>
+            <li class="top-menu-item"><a class="basket" href="#">Корзина:<span class="basket-size">0</span></a></li>
             <li class="top-menu-item"><a class="checkout" href="#">Оформить заказ</a></li>
           </ul>
         </div>
@@ -49,8 +49,14 @@
         <!-- авторизация/регистрация -->
         <div class="personal">
           <div class="account">
-            <a class="login" href="#">Войти</a>
-            <a class="register" href="#">Регистрация</a>
+            <a class="login-button" href="#">
+              Войти
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+              </svg>
+            </a>
+            <a class="register-button" href="#">Регистрация</a>
           </div>
         </div>
       </div>
@@ -69,7 +75,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="index">
       <!-- трехстрочная и трехколоночная плитка -->
       <section class="categories wrapper">
         <!-- первая строчка: Материалы, Инструмент, Техника -->
@@ -90,7 +96,7 @@
           </div>
         </div>
 
-        <div class="categories-line">
+        <div class="ruler categories-line">
           <div class="category-line">
             <div class="category category-drill">
               <h3>Дрели</h3>
@@ -101,7 +107,7 @@
               <a class="red-button" href="catalog.html">Открыть каталог</a>
             </div>
 
-            <div class="category category-perforator">
+            <div class="category category-perforator display-none">
               <h3>Перфораторы</h3>
               <span>Настоящие мужские игрушки</span>
 
@@ -112,12 +118,12 @@
           </div>
 
           <!-- кружочки-переключалки button на js -->
-          <button type="button" class="bullet bullet-first"></button>
-          <button type="button" class="bullet bullet-second"></button>
+          <button type="button" class="bullet bullet-left"></button>
+          <button type="button" class="bullet bullet-right"></button>
 
           <!-- стрелочки -->
-          <button type="button" class="arrow-left">&lt;</button>
-          <button type="button" class="arrow-right">&gt;</button>
+          <button type="button" class="arrow arrow-left"><span class="visually-hidden">&lt;</span></button>
+          <button type="button" class="arrow arrow-right"><span class="visually-hidden">&gt;</span></button>
         </div>
 
         <div class="category-column">
