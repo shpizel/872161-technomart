@@ -391,6 +391,7 @@ display: flex;
   position: relative;
   background-color: #ee3643;
   display: block;
+  border-radius: 3px;
 }
 
 .offer-current-price a {
@@ -836,6 +837,7 @@ h3.control {
 
 .search-results-button-buy:active {
   background-color: #518534;
+  box-shadow: none;
 }
 
 .search-results-button-buy:hover::before,
