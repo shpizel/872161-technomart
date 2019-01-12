@@ -1,12 +1,16 @@
-main {
-  /* margin-top: 59px; */
-}
+/* .page-main {
+  margin-top: 59px;
+} */
+
+/**************************************************
+INDEX TILE START
+**************************************************/
 
 .categories {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 400; /* ? */
 }
 
 .ruler {
@@ -14,8 +18,7 @@ main {
 }
 
 .ruler,
-.category-perforator,
-.category-drill {
+.category-ruler {
   width: 620px;
   height: 266px;
 }
@@ -48,6 +51,13 @@ main {
   background: url("../img/flag-new.png") no-repeat 213px 31px;
 } */
 
+
+.category {
+  width: 300px;
+  height: 123px;
+  position: relative;
+}
+
 .category-materials {
   background: #ffbf47 url("../img/icon-1.svg") no-repeat 213px 31px;
 }
@@ -68,13 +78,6 @@ main {
   background: #ffc047 url("../img/icon-5.svg") no-repeat 191px 32px;
 }
 
-.category {
-  width: 300px;
-  height: 123px;
-  box-sizing: border-box;
-  position: relative;
-}
-
 .category h3 {
   padding-left: 23px;
   padding-top: 26px;
@@ -83,23 +86,21 @@ main {
   line-height: 30px;
   color: #ffffff;
 }
-.category-drill,
-.category-perforator {
+
+.category-ruler {
   width: 620px;
   height: 266px;
   position: relative;
 }
 
-.category-drill .red-button,
-.category-perforator .red-button {
+.category-ruler .red-button {
   position: absolute;
   left: 25px;
   bottom: 22px;
   width: 195px;
 }
 
-.category-drill h3,
-.category-perforator h3 {
+.category-ruler h3 {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -111,8 +112,7 @@ main {
   top: 27px;
 }
 
-.category-drill span,
-.category-perforator span {
+.category-ruler span {
   position: absolute;
   left: 25px;
   top: 65px;
@@ -130,7 +130,6 @@ main {
   left: 25px;
   bottom: 22px;
   display: block;
-  box-sizing: border-box;
   width: 135px;
   height: 38px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -139,7 +138,8 @@ main {
   border-radius: 2px;
 }
 
-.category .button:hover {
+.category .button:hover,
+.category .button:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -250,7 +250,6 @@ display: flex;
 }
 
 .ruler {
-  background-image: url(../img/drill.jpg);
   padding-left: 24px;
   margin-top: 0px;
   height: 266px;
@@ -280,40 +279,17 @@ display: flex;
   left: 25px;
 }*/
 
-.red-button {
-  font-family: 'Cuprum', Arial, sans-serif;
-  background-color: #ee3643;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
-  padding-top: 14px;
-  height: 38px;
-  display: block;
-  width: 185px;
-  text-align: center;
-  border-radius: 3px;
-  text-decoration: none;
-  display: block;
-  box-sizing: border-box;
-}
-
-.red-button:hover {
-  background-color: #ca2c37;
-}
-
-.red-button:active {
-  background-color: #ba2732;
-}
+/**************************************************
+INDEX TILE END
+**************************************************/
 
 .popular header {
   /* height: 89px; */
   /* display: flex; */
   /* justify-content: space-between; */
-  box-sizing: border-box;
 }
 
-.popular header h2 {
+.popular h2 {
   margin: 0;
   padding-left: 30px;
   padding-top: 33px;
@@ -327,90 +303,14 @@ display: flex;
   width: 253px;
 }
 
-.popular header a {
+/* .popular header a {
   margin-top: 25px;
   margin-right: 24px;
-}
+} */
 
-.offers {
-  /* display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px; */
-}
-
-.offer {
-  box-sizing: border-box;
-  width: 220px;
-  height: 318px;
-  border: #eaeaea 1px solid;
-}
-
-.offer:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
-}
-
-.offer:not(:last-child) {
-  margin-right: 20px;
-}
-
-.offer h3 {
-  width: 191px;
-  margin: 0;
-  /* margin-left: 15px; */
-  text-align: center;
-  color: #000000;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
-}
-
-.offer .offer-name-link {
-  text-decoration: none;
-  color: #000000;
-}
-
-.offer-old-price {
-  display: block;
-  font-size: 17px;
-  line-height: 18px;
-  text-align: center;
-  color: #a9a9a9;
-  font-weight: bold;
-  text-decoration: line-through;
-}
-
-.offer-current-price {
-  margin-left: 40px;
-  width: 141px;
-  height: 38px;
-  line-height: 18px;
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  background-color: #ee3643;
-  display: block;
-  border-radius: 3px;
-}
-
-.offer-current-price a {
-  color: #ffffff;
-  width: 122px;
-  height: 38px;
-  display: block;
-}
-
-.offer-current-price a::after {
-  position: absolute;
-  right: -19px;
-  content: "";
-  box-sizing: border-box;
-  width: 1px;
-  height: 1px;
-  border: solid white 19px;
-  border-left:solid #ee3643 19px;
-}
+/**************************************************
+SERVICES START
+**************************************************/
 
 .services {
   background-color: #f4f7f9;
@@ -451,7 +351,6 @@ display: flex;
 }
 
 .services-menu-item {
-  box-sizing: border-box;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 }
 
@@ -468,7 +367,6 @@ display: flex;
   border-bottom: #4e637c 1px solid;
   padding-left: 22px;
   padding-top: 21px;
-  box-sizing: border-box;
 }
 
 .services-menu-item a:link {
@@ -482,7 +380,8 @@ display: flex;
   border: none;
 }
 
-.services-menu-item:hover a {
+.services-menu-item:hover a,
+.services-menu-item:focus a {
   background-color: #293449;
   color: white;
 }
@@ -517,20 +416,27 @@ display: flex;
   width: 195px;
 }
 
+/**************************************************
+SERVICES END
+**************************************************/
+
+/**************************************************
+VENDORS START
+**************************************************/
+
 .vendors-list {
   padding: 0;
   margin: 0;
-  display: flex;
+  /* display: flex; */
   list-style: none;
 
-  flex-wrap: wrap;
-  margin-left: -20px; /* dirty hack */
-  margin-bottom: 65px; /*85-20;*/
-  margin-top: 20px;
+  /* flex-wrap: wrap; */
+  /* margin-left: -20px; dirty hack */
+  /* margin-bottom: 65px; 85-20; */
+  /* margin-top: 20px; */
 }
 
 .vendors-list-item {
-  box-sizing: border-box;
   width: 220px;
   height: 145px;
   border: #eaeaea 1px solid;
@@ -538,7 +444,8 @@ display: flex;
   margin-bottom: 20px;
 }
 
-.vendors-list-item:hover {
+.vendors-list-item:hover,
+.vendors-list-item:focus{
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -559,6 +466,14 @@ display: flex;
 .vendors-list-item img {
   margin: auto;
 }
+
+/**************************************************
+VENDORS END
+**************************************************/
+
+/**************************************************
+CONTACTS START
+**************************************************/
 
 .contacts {
   /* display: flex;
@@ -597,7 +512,6 @@ display: flex;
 }
 
 .contacts-company .advantages {
-  /* list-style: inside; */
   font-family: 'Cuprum', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -606,6 +520,14 @@ display: flex;
 
   /* margin-bottom: 37px; */
 }
+
+/**************************************************
+CONTACTS END
+**************************************************/
+
+/**************************************************
+CATALOG START
+**************************************************/
 
 .breadcrumbs {
   text-transform: uppercase;
@@ -616,10 +538,8 @@ display: flex;
   text-decoration: none;
 }
 
-
 .catalog h1 {
   height: 89px;
-  box-sizing: border-box;
   padding-left: 30px;
   padding-top: 32px;
   font-family: 'Cuprum', Arial, sans-serif;
@@ -636,19 +556,18 @@ display: flex;
   margin: 0;
 }
 
-.search-results fieldset legend {
+.search-results legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
 }
 
-h3.control {
+.filter-group {
   height: 38px;
   background-color: #f7f3ec;
   padding-left: 18px;
   padding-top: 14px;
   text-transform: uppercase;
-  box-sizing: border-box;
 }
 
 .price-filter .range {
@@ -666,7 +585,8 @@ h3.control {
   text-align: center;
 }
 
-.vendor-filter-item, .power-filter-item {
+.vendor-filter-item,
+.power-filter-item {
   text-transform: uppercase;
   font-size: 15px;
   line-height: 20px;
@@ -685,7 +605,6 @@ h3.control {
   width: 700px;
   background-color: #f7f3ec;
   padding-top: 14px;
-  box-sizing: border-box;
 }
 
 .filter-group-label {
@@ -699,7 +618,8 @@ h3.control {
   border-bottom: #ee3643 1px dashed;
 }
 
-.sorter-links a:hover {
+.sorter-links a:hover,
+.sorter-links a:focus {
   color: #000000;
   border-bottom: #ee3643 1px solid;
 }
@@ -717,7 +637,8 @@ h3.control {
   transform: rotate(180deg);
 }
 
-.sorter-buttons a:hover {
+.sorter-buttons a:hover,
+.sorter-buttons a:focus {
   fill: #000000;
 }
 
@@ -726,17 +647,207 @@ h3.control {
   fill: #ee3643;
 }
 
+/**************************************************
+CATALOG START
+**************************************************/
+
+/**************************************************
+OFFER START
+**************************************************/
+
+.offers {
+  /* display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px; */
+}
+
+.offer {
+  width: 220px;
+  height: 318px;
+  border: #eaeaea 1px solid;
+  position: relative;
+}
+
+.offer:hover,
+.offer:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.offer:not(:last-child) {
+  margin-right: 20px;
+}
+
+.offer h3 {
+  width: 191px;
+  margin: 0;
+  /* margin-left: 15px; */
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.offer-name-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.offer-old-price {
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #a9a9a9;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.offer-current-price {
+  margin-left: 40px;
+  width: 141px;
+  height: 38px;
+  line-height: 18px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  background-color: #ee3643;
+  display: block;
+  border-radius: 3px;
+}
+
+.offer-current-price a {
+  color: #ffffff;
+  width: 122px;
+  height: 38px;
+  display: block;
+}
+
+.offer-current-price a::after {
+  position: absolute;
+  right: -19px;
+  content: "";
+  width: 1px;
+  height: 1px;
+  border: solid white 19px;
+  border-left:solid #ee3643 19px;
+}
+
+/**************************************************
+OFFER END
+**************************************************/
+
+/**************************************************
+FAST ACTIONS START
+**************************************************/
+
+.offer:hover .fast-actions,
+.offer:focus .fast-actions {
+  display: block;
+}
+
+.fast-actions {
+  display: none;
+  position: absolute;
+  width: 218px;
+  height: 164px;
+  top: 0px;
+  left: 0px;
+  padding-left: 41px;
+  padding-top: 44px;
+  background: #fff;
+}
+
+.fast-actions a {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  width: 135px;
+  height: 38px;
+  padding-top: 14px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.offer-bookmark {
+  border: #63a63e 3px solid;
+  text-align: center;
+  color: #32425c;
+}
+
+.offer-bookmark:hover,
+.offer-bookmark:focus {
+  border-color: #32425c;
+}
+.offer-bookmark:active {
+  opacity: 0.3;
+}
+
+.offer-buy {
+  color: white;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+  padding-left: 49px;
+  margin-bottom: 7px;
+}
+
+.offer-buy::before {
+  background: url("../img/icon-cart.svg") no-repeat left center;
+  opacity: 0.3;
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 12px;
+  top: 11px;
+}
+
+.offer-buy:hover,
+.offer-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.offer-buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.offer-buy:hover::before,
+.offer-buy:focus::before,
+.offer-buy:active::before {
+  opacity: 1.0;
+}
+
+/**************************************************
+FAST ACTIONS END
+**************************************************/
+
+/**************************************************
+PAGINATOR START
+**************************************************/
+
+.paginator ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .paginator li {
   width: 38px;
   height: 38px;
 
   border:#e5e5e5 1px solid;
   border-radius: 3px;
-  box-sizing: border-box;
   padding-top: 14px;
 }
 
-.paginator li:hover {
+.paginator li:hover,
+.paginator li:focus {
   border:#bdc6ca 1px solid;
 }
 
@@ -763,84 +874,6 @@ h3.control {
   width: 140px;
 }
 
-.catalog .offer {
-  position: relative;
-}
-
-.catalog .offer:hover .fast-actions {
-  display: block;
-}
-
-.fast-actions {
-  display: none;
-  position: absolute;
-  width: 218px;
-  height: 164px;
-  top: 0px;
-  left: 0px;
-  box-sizing: border-box;
-  padding-left: 41px;
-  padding-top: 44px;
-  background: #fff;
-}
-
-.fast-actions a {
-  font-size: 17px;
-  line-height: 18px;
-  font-family: 'Cuprum', Arial, sans-serif;
-  text-transform: uppercase;
-  display: block;
-  width: 135px;
-  height: 38px;
-  box-sizing: border-box;
-  padding-top: 14px;
-  position: relative;
-  text-decoration: none;
-  border-radius: 3px;
-}
-
-.search-results-button-buy {
-  color: white;
-  box-shadow: inset 0px -3px 0 0 #367315;
-  background-color: #63a63e;
-  padding-left: 49px;
-  margin-bottom: 7px;
-}
-
-.search-results-button-bookmark {
-  border: #63a63e 3px solid;
-  text-align: center;
-  color: #32425c;
-}
-
-.search-results-button-bookmark:hover {
-  border-color: #32425c;
-}
-.search-results-button-bookmark:active {
-  opacity: 0.3;
-}
-
-.search-results-button-buy::before {
-  background: url(../img/icon-cart.svg) no-repeat left center;
-  opacity: 0.3;
-  content: "";
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  left: 12px;
-  top: 11px;
-}
-
-.search-results-button-buy:hover {
-  background-color: #5fbb2d;
-}
-
-.search-results-button-buy:active {
-  background-color: #518534;
-  box-shadow: none;
-}
-
-.search-results-button-buy:hover::before,
-.search-results-button-buy:active::before {
-  opacity: 1.0;
-}
+/**************************************************
+PAGINATOR END
+**************************************************/

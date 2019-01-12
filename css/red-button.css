@@ -1,0 +1,26 @@
+.red-button {
+  font-family: 'Cuprum', Arial, sans-serif;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 14px;
+  height: 38px;
+  display: block;
+  width: 185px;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.red-button:hover,
+.red-button:focus {
+  background-color: #ca2c37;
+}
+
+.red-button:active {
+  background-color: #ba2732;
+}

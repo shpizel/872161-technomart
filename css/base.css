@@ -1,10 +1,28 @@
-/* Общие стили */
-
 body {
-  font-family: 'PT Sans', Arial, sans-serif;
+  margin: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .wrapper {
