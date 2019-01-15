@@ -4,16 +4,22 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
+  padding-bottom: 60px;
 }
 
-/* .header-wrapper {
+.header-wrapper {
   display: flex;
-} */
+}
 
 .header-top {
-  /* align-items: flex-start; */
-  /* height: 42px; */
+  align-items: flex-start;
+  height: 42px;
   background-color: #293449;
+}
+
+.header-middle {
+  display: flex;
+  margin-top: 46px;
 }
 
 /**************************************************
@@ -22,28 +28,31 @@ LOGO START
 
 .logo {
   text-align: center;
-  border-bottom: #b52933 5px solid;
+  /* border-bottom: #b52933 5px solid; */
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-}
-
-.logo a {
   display: block;
   width: 220px;
-  height: 42px;
+  height: 47px; /* 42 + 5 px shadow */
   padding-top: 13px;
   background-color: #ee3643;
   color: #ffffff;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.logo a:hover,
-.logo a:focus {
+.logo:link,
+.logo:visited {
+  color: #fff;
+}
+
+.logo:hover,
+.logo:focus {
   background-color: #ca2c37;
 }
 
-.logo a:active {
+.logo:active {
   background-color: #ba2732;
 }
 
@@ -127,11 +136,9 @@ TOP MENU START
   list-style: none;
   margin: 0;
   padding: 0;
-
-
-  /* display: flex;
+  display: flex;
   width: 450px;
-  background-color: #32425c; */
+  /* background-color: #32425c; */
 }
 
 .top-menu-item {
@@ -246,17 +253,21 @@ SECOND LEVEL OF HEADER
 **************************************************/
 
 .hello {
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
   font-size: 16px;
   font-style: italic;
   color: #ee3643;
   line-height: 23px;
+  width: 196px;
+  margin-left: 53px;
 }
 
-/* .header-middle-contacts {
-  width: 264px;
-  margin-left: 52px;
-  margin-top: -1px;
-} */
+.header-middle-contacts {
+  margin-left: 71px;
+
+}
 
 .header-middle-contacts .telephone {
   display: block;
@@ -284,11 +295,11 @@ SECOND LEVEL OF HEADER
 }
 
 .header-middle-contacts .address {
+  display: block;
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  /* margin-top: 3px;
-  margin-left: 11px; */
 }
 
 .personal-links {
@@ -307,6 +318,10 @@ SECOND LEVEL OF HEADER
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
+}
+
+.personal-links-item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .personal-links-item a:hover,
@@ -434,7 +449,7 @@ MAIN MENU START
 **************************************************/
 
 .main-menu {
-  /* display: flex; */
+  display: flex;
   list-style: none;
   background: #32425c;
   border-bottom: #293449 5px solid;
@@ -442,12 +457,12 @@ MAIN MENU START
   font-size: 17px;
   line-height: 17px;
   box-shadow: inset 0px -5px 0 0 #293449;
-  /* margin-top: 30px; */
+  margin-top: 43px;
 }
 
-/* .main-menu-item {
+.main-menu-item {
   flex-grow: 1;
-} */
+}
 
 .main-menu-item a {
   display: block;
@@ -477,3 +492,25 @@ MAIN MENU START
 /**************************************************
 MAIN MENU END
 **************************************************/
+
+/* account */
+.account {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.account .register-button {
+  margin-left: 10px;
+}
+
+.personal {
+  margin-left: 51px;
+}
+
+.personal .login-button {
+  margin-left: 18px;
+}
+
+.personal-links {
+  display: flex;
+}

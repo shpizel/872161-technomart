@@ -7,10 +7,32 @@ INDEX TILE START
 **************************************************/
 
 .categories {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400; /* ? */
+  margin-top: 59px;
+  margin-bottom: 53px;
+}
+
+.categories-line {
+  display: flex;
+}
+
+.categories-line  .category:last-child {
+  margin-right: 0px;
+}
+
+.categories-line .category {
+  margin-right: 20px;
+}
+
+.category-column .category {
+  margin-left: 20px;
+}
+
+.category-column .category:first-child {
+  margin-bottom: 20px;
 }
 
 .ruler {
@@ -35,6 +57,16 @@ INDEX TILE START
   position: absolute;
   width: 10px;
   height: 10px;
+  top: 220px;
+  border-radius: 5px;
+}
+
+.bullet-left {
+  left: 295px;
+}
+
+.bullet-right {
+  left: 315px;
 }
 
 .ruler .arrow-left {
@@ -81,10 +113,15 @@ INDEX TILE START
 .category h3 {
   padding-left: 23px;
   padding-top: 26px;
+  margin: 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
   color: #ffffff;
+}
+
+.categories > div:first-child {
+  margin-bottom: 20px;
 }
 
 .category-ruler {
@@ -284,29 +321,29 @@ INDEX TILE END
 **************************************************/
 
 .popular header {
-  /* height: 89px; */
-  /* display: flex; */
-  /* justify-content: space-between; */
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f5f0;
 }
 
 .popular h2 {
   margin: 0;
-  padding-left: 30px;
-  padding-top: 33px;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  padding-left: 30px;
+  padding-top: 33px;
   color: #32425c;
+  font-weight: normal;
 }
 
 .popular .red-button {
   width: 253px;
-}
-
-/* .popular header a {
-  margin-top: 25px;
   margin-right: 24px;
-} */
+  margin-top: 25px;
+}
 
 /**************************************************
 SERVICES START
@@ -314,23 +351,32 @@ SERVICES START
 
 .services {
   background-color: #f4f7f9;
-  /* padding-top: 68px; */
+  margin-top: 65px;
+  padding-top: 68px;
+
 }
 
 .services h2 {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+
+.service-about p {
+  width: 398px;
 }
 
 .services-interactive h3 {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
   color: #32425c;
+  font-weight: 400;
 }
 
 .services p {
@@ -338,6 +384,8 @@ SERVICES START
   padding: 0;
   font-size: 13px;
   line-height: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .services-menu {
@@ -355,7 +403,7 @@ SERVICES START
 }
 
 .services-menu-item a {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   display: block;
   font-size: 21px;
   line-height: 30px;
@@ -387,11 +435,11 @@ SERVICES START
 }
 
 .services-interactive {
-  /* display: flex; */
+  display: flex;
 }
 
 .services-interactive > div {
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 
 .services-interactive p {
@@ -404,12 +452,24 @@ SERVICES START
   background: url("../img/truck.png") no-repeat right bottom;
 }
 
+.service-delivery p {
+  width: 275px;
+}
+
 .service-guarantee {
   background: url("../img/guarantee.png") no-repeat right bottom;
 }
 
+.service-guarantee p {
+  width: 379px;
+}
+
 .service-credit {
   background: url("../img/credit.png") no-repeat right bottom;
+}
+
+.service-credit p {
+  width: 279px;
 }
 
 .service-credit .red-button {
@@ -427,20 +487,19 @@ VENDORS START
 .vendors-list {
   padding: 0;
   margin: 0;
-  /* display: flex; */
+  display: flex;
   list-style: none;
 
-  /* flex-wrap: wrap; */
-  /* margin-left: -20px; dirty hack */
-  /* margin-bottom: 65px; 85-20; */
-  /* margin-top: 20px; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .vendors-list-item {
   width: 220px;
   height: 145px;
   border: #eaeaea 1px solid;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-bottom: 20px;
 }
 
@@ -476,21 +535,39 @@ CONTACTS START
 **************************************************/
 
 .contacts {
-  /* display: flex;
+  display: flex;
   margin-top: 82px;
-  margin-bottom: 86px; */
+  margin-bottom: 86px;
 
-  /* font-family: 'Cuprum', Arial, sans-serif; */
+  /* font-family: "Cuprum", Arial, sans-serif; */
   font-size: 13px;
   line-height: 24px;
 }
 
 .contacts .red-button {
+  margin-top: 37px;
   width: 220px;
+}
+
+.contacts-company p {
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contacts-company:last-child p {
+  width: 179px;
 }
 
 .contacts-company .red-button {
   width: 300px;
+}
+
+.contacts-company:last-child .red-button {
+  margin-top: 40px;
 }
 
 .contacts .contacts-company-left {
@@ -500,19 +577,16 @@ CONTACTS START
 
 .contacts-company h2,
 .contacts-company h3 {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.contacts-company p {
-  font-size: 13px;
-  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .contacts-company .advantages {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -531,6 +605,14 @@ CATALOG START
 
 .breadcrumbs {
   text-transform: uppercase;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs > li {
+  margin-right: 20px;
 }
 
 .breadcrumbs a {
@@ -542,12 +624,22 @@ CATALOG START
   height: 89px;
   padding-left: 30px;
   padding-top: 32px;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   background-color: #f2f6f8;
   color: #32425c;
+  font-weight: 400;
+}
+
+.search-results {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.search-results .results {
+  width: 700px;
 }
 
 .search-results fieldset {
@@ -560,6 +652,8 @@ CATALOG START
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .filter-group {
@@ -568,6 +662,9 @@ CATALOG START
   padding-left: 18px;
   padding-top: 14px;
   text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .price-filter .range {
@@ -592,6 +689,11 @@ CATALOG START
   line-height: 20px;
 }
 
+.filters {
+  width: 220px;
+  margin-right: 20px;
+}
+
 .filters button[type="submit"] {
   width: 140px;
   height: 38px;
@@ -602,13 +704,39 @@ CATALOG START
 }
 
 .sorter {
-  width: 700px;
+  /* width: 700px; */
   background-color: #f7f3ec;
   padding-top: 14px;
+  display: flex;
+  padding-left: 19px;
+  padding-right: 17px;
+  height: 38px;
+  justify-content: space-between;
+}
+
+.sorter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.sorter-links {
+  margin-right: 46px;
+}
+
+.sorter-links {
+  width: 300px;
+  justify-content: space-between;
+}
+
+.sorter-buttons .sorter-button:not(:first-child) {
+  margin-left: 21px;
 }
 
 .filter-group-label {
   text-transform: uppercase;
+  margin: 0;
 }
 
 .sorter-links a {
@@ -656,9 +784,16 @@ OFFER START
 **************************************************/
 
 .offers {
-  /* display: flex;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
-  margin-bottom: 20px; */
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+}
+
+.search-results .offers {
+  margin-bottom: 32px;
 }
 
 .offer {
@@ -666,6 +801,7 @@ OFFER START
   height: 318px;
   border: #eaeaea 1px solid;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .offer:hover,
@@ -673,9 +809,9 @@ OFFER START
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.offer:not(:last-child) {
+/* .offer:not(:last-child) {
   margin-right: 20px;
-}
+} */
 
 .offer h3 {
   width: 191px;
@@ -835,15 +971,20 @@ PAGINATOR START
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 .paginator li {
   width: 38px;
   height: 38px;
-
   border:#e5e5e5 1px solid;
   border-radius: 3px;
   padding-top: 14px;
+  margin-left: 10px;
+}
+
+.paginator li:first-child {
+  margin-left: 0;
 }
 
 .paginator li:hover,

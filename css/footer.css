@@ -1,7 +1,12 @@
 .page-footer {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+}
+
+.page-footer .logo {
+  height: 68px;
+  padding-top: 20px;
 }
 
 .footer-top,
@@ -14,27 +19,25 @@
 }
 
 .footer-wrapper {
-  /* display: flex; */
+  display: flex;
 }
 
-.footer-middle .footer-wrapper {
-  /* padding-top: 32px; */
-}
+/* .footer-middle .footer-wrapper {
+  padding-top: 32px;
+} */
 
 .footer-top .logo {
-  /* margin-right: 170px; */
+  margin-right: 170px;
 }
 
 .footer-top-menu {
   margin: 0;
   padding: 0;
-  /* display: flex; */
+  display: flex;
   list-style: none;
-  /* flex-grow: 1; */
-
-  /* подобрал, пока без pixel perfect */
-  /* justify-content: space-between; */
-  /* padding-top: 23px; */
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 42px;
 }
 
 /* .footer-top-menu-item {} */
@@ -57,10 +60,11 @@
   color: rgba(241, 245, 247, 0.5);
 }
 
-/* .footer-middle {
+.footer-middle {
   display: flex;
-  padding-bottom: 51px;
-} */
+  padding-bottom: 53px;
+  padding-top: 31px;
+}
 
 .footer-middle-contacts {
   padding: 0;
@@ -68,17 +72,22 @@
   color: #f1f5f7;
   font-size: 18px;
   line-height: 24px;
-  /* width: 332px; */
+  width: 332px;
+}
+
+.footer-middle-contacts p {
+  margin: inherit;
+  padding: inherit;
 }
 
 .footer-middle-menu {
   list-style: none;
   margin: 0;
   padding: 0;
-
-  /* display: flex;
+  margin-left: 91px;
+  display: flex;
   flex-grow: 1;
-  justify-content: space-between;*/
+  justify-content: space-between;
 }
 
 .footer-middle-menu-item a {
@@ -97,25 +106,24 @@
   text-decoration: none;
 }
 
-
-
 .footer-bottom-copyright {
   margin: 0;
   padding: 0;
   color: #ffffff;
+  width: 227px;
 }
 
 .footer-bottom {
   font-size: 16px;
   line-height: 18px;
 
-  /* padding-top: 38px;
-  padding-bottom: 36px; */
+  padding-top: 38px;
+  padding-bottom: 36px;
 }
 
-/* .footer-bottom-contacts {
+.footer-bottom-contacts {
   display: flex;
-} */
+}
 
 .footer-bottom-contacts p {
   padding: 0;
@@ -123,10 +131,10 @@
   color: #ffffff;
 }
 
-/* .footer-bottom-contacts p:nth-last-child(1) {
+.footer-bottom-contacts p:nth-last-child(1) {
   margin-right: 16px;
   margin-left: 53px;
-} */
+}
 
 .footer-bottom-contacts a {
   color: #ffd180;
@@ -148,9 +156,9 @@
   margin: 0;
   padding: 0;
 
-  /* display: flex; */
-  /* flex-grow: 1; */
-  /* justify-content: center; */
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .footer-bottom-social a {
