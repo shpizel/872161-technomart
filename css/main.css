@@ -115,7 +115,7 @@ INDEX TILE START
 
 .category h3 {
   padding-left: 23px;
-  padding-top: 26px;
+  padding-top: 20px;
   margin: 0;
   font-size: 24px;
   font-weight: bold;
@@ -174,7 +174,7 @@ INDEX TILE START
   height: 38px;
   background-color: rgba(0, 0, 0, 0.1);
   /* padding-left: 24px; */
-  padding-top: 12px;
+  padding-top: 10px;
   border-radius: 2px;
 }
 
@@ -336,8 +336,8 @@ INDEX TILE END
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-left: 30px;
-  padding-top: 33px;
+  padding-left: 25px;
+  padding-top: 31px;
   color: #32425c;
   font-weight: normal;
 }
@@ -355,8 +355,13 @@ SERVICES START
 .services {
   background-color: #f4f7f9;
   margin-top: 65px;
-  padding-top: 68px;
+  padding-top: 45px;
 
+}
+.catalog .services {
+  margin-top: 60px;
+  padding-top: 45px;
+  padding-bottom: 48px;
 }
 
 .services h2 {
@@ -366,7 +371,7 @@ SERVICES START
   color: #000000;
   text-transform: uppercase;
   font-weight: 400;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .service-about p {
@@ -380,6 +385,16 @@ SERVICES START
   text-transform: uppercase;
   color: #32425c;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.services-interactive .description {
+  padding-top: 47px;
+}
+
+.services-interactive p {
+  margin-top: 20px;
 }
 
 .services p {
@@ -387,7 +402,7 @@ SERVICES START
   padding: 0;
   font-size: 13px;
   line-height: 24px;
-  padding-top: 20px;
+  padding-top: 6px;
   padding-bottom: 20px;
 }
 
@@ -396,7 +411,7 @@ SERVICES START
   padding: 0;
   margin: 0;
   width: 240px;
-  padding-top: 75px;
+  padding-top: 50px;
   padding-bottom: 100px;
   margin-right: 80px;
 }
@@ -410,14 +425,14 @@ SERVICES START
   display: block;
   font-size: 21px;
   line-height: 30px;
-  padding-left: 22px;
+
   font-weight: bold;
   height: 61px;
   color: #ffffff;
   background-color: #32425c;
   border-bottom: #4e637c 1px solid;
   padding-left: 22px;
-  padding-top: 21px;
+  padding-top: 12px;
 }
 
 .services-menu-item a:link {
@@ -453,14 +468,27 @@ SERVICES START
 
 .service-delivery {
   background: url("../img/truck.png") no-repeat right bottom;
+  display: none;
+}
+
+.service-delivery.active {
+  display: block;
+  height: 100%;
 }
 
 .service-delivery p {
+  margin-top: 19px;
   width: 275px;
 }
 
 .service-guarantee {
   background: url("../img/guarantee.png") no-repeat right bottom;
+  display: none;
+}
+
+.service-guarantee.active {
+  display: block;
+  height: 100%;
 }
 
 .service-guarantee p {
@@ -469,6 +497,12 @@ SERVICES START
 
 .service-credit {
   background: url("../img/credit.png") no-repeat right bottom;
+  display: none;
+}
+
+.service-credit.active {
+  display: block;
+  height: 100%;
 }
 
 .service-credit p {
@@ -542,7 +576,7 @@ CONTACTS START
 
 .contacts {
   display: flex;
-  margin-top: 82px;
+  margin-top: 80px;
   margin-bottom: 86px;
 
   /* font-family: "Cuprum", Arial, sans-serif; */
@@ -560,20 +594,28 @@ CONTACTS START
   line-height: 24px;
   margin: 0;
   padding: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+.contacts-company-left p:last-child {
+  width: 400px;
+}
+
+.contacts-company .map {
+  margin-top: 30px;
 }
 
 .contacts-company:last-child p {
   width: 179px;
 }
 
-.contacts-company .red-button {
+/* .contacts-company .red-button {
   width: 300px;
-}
+} */
 
 .contacts-company:last-child .red-button {
-  margin-top: 40px;
+  margin-top: 33px;
+  width: 300px;
 }
 
 .contacts .contacts-company-left {
@@ -598,7 +640,13 @@ CONTACTS START
   font-size: 18px;
   line-height: 20px;
 
-  /* margin-bottom: 37px; */
+  margin-top: 20px;
+  list-style: none;
+}
+
+.advantages-item {
+  margin-left: 36px;
+  margin-bottom: 20px;
 }
 
 /**************************************************
@@ -615,6 +663,7 @@ CATALOG START
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top:20px;
 }
 
 .breadcrumbs > li {
@@ -628,8 +677,8 @@ CATALOG START
 
 .catalog h1 {
   height: 89px;
-  padding-left: 30px;
-  padding-top: 32px;
+  padding-left: 27px;
+  padding-top: 30px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -793,7 +842,6 @@ OFFER START
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-  margin-bottom: 20px;
   justify-content: space-between;
 
 }
@@ -820,6 +868,7 @@ OFFER START
   top: 0px;
   right: 0px;
   background: transparent url("../img/flag-new.png") top right;
+  z-index: 999;
 }
 
 .offer:hover,
@@ -832,9 +881,9 @@ OFFER START
 } */
 
 .offer h3 {
-  width: 191px;
   margin: 0;
-  /* margin-left: 15px; */
+  padding-left: 32px;
+  padding-right: 33px;
   text-align: center;
   color: #000000;
   font-size: 18px;
@@ -845,6 +894,7 @@ OFFER START
 .offer-name-link {
   text-decoration: none;
   color: #000000;
+  display: block;
 }
 
 .offer-old-price {
@@ -855,6 +905,9 @@ OFFER START
   color: #a9a9a9;
   font-weight: bold;
   text-decoration: line-through;
+  margin-top: 18px;
+  margin-bottom: 13px;
+  min-height: 20px;
 }
 
 .offer-current-price {
@@ -874,12 +927,13 @@ OFFER START
 
 .offer-current-price a {
   color: #ffffff;
-  width: 122px;
-  height: 38px;
+  width: inherit;
+  height: inherit;
   display: block;
+  padding-top: 12px;
 }
 
-.offer-current-price a::after {
+.offer-current-price::before {
   position: absolute;
   right: -19px;
   content: "";
@@ -911,7 +965,7 @@ FAST ACTIONS START
   left: 0px;
   padding-left: 41px;
   padding-top: 44px;
-  background: #fff;
+  background: rgba(255, 255, 255, .9);
 }
 
 .fast-actions a {

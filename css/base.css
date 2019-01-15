@@ -28,6 +28,8 @@ html {
 .wrapper {
   width: 940px;
   margin: 0 auto;
+  min-width: 960px;
+  padding: 0 10px;
 }
 
 .visually-hidden:not(:focus):not(:active),

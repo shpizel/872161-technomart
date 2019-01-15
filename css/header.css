@@ -4,7 +4,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  padding-bottom: 60px;
+  padding-bottom: 43px;
 }
 
 .header-wrapper {
@@ -154,7 +154,7 @@ TOP MENU START
   line-height: 18px;
   text-decoration: none;
   color: #ffffff;
-  padding-top: 14px;
+  padding-top: 11px;
   position: relative;
 }
 
@@ -185,7 +185,7 @@ TOP MENU START
 }
 
 .top-menu-item .bookmarks {
-  padding-left: 46px;
+  padding-left: 45px;
 }
 
 .top-menu-item .bookmarks::before {
@@ -208,7 +208,7 @@ TOP MENU START
 }
 
 .top-menu-item .basket {
-  padding-left: 46px;
+  padding-left: 50px;
 }
 
 .top-menu-item .basket::before {
@@ -273,13 +273,13 @@ SECOND LEVEL OF HEADER
   display: block;
   font-size: 21px;
   line-height: 21px;
-  letter-spacing: 0.4px;
+  /* letter-spacing: 0.4px; */
   color: #e9292a;
   position: relative;
   height: 45px;
   width: 270px;
-  padding-left: 74px;
-  padding-top: 13px;
+  padding-left: 71px;
+  padding-top: 10px;
   border: #ffffff 3px solid;
 }
 
@@ -290,8 +290,8 @@ SECOND LEVEL OF HEADER
   content: "";
   background: url("../img/icon-phone.png") no-repeat;
   position: absolute;
-  left: 15px;
-  top: 13px;
+  left: 12px;
+  top: 10px;
 }
 
 .header-middle-contacts .address {
@@ -300,6 +300,7 @@ SECOND LEVEL OF HEADER
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  margin-top: 4px;
 }
 
 .personal-links {
@@ -311,6 +312,9 @@ SECOND LEVEL OF HEADER
   justify-content: flex-end;
   height: 45px;
   margin-left: 56px; */
+  margin-top: 8px;
+  margin-left: 17px;
+}
 }
 
 .personal-links-item a {
@@ -341,8 +345,8 @@ SECOND LEVEL OF HEADER
   width: 254px;
   height: 45px;
   position: relative;
-  padding-left: 47px;
-  padding-top: 14px;
+  padding-left: 46px;
+  padding-top: 12px;
 }
 
 .personal .username svg {
@@ -404,7 +408,7 @@ SECOND LEVEL OF HEADER
   width: 121px;
   height: 45px;
   padding-left: 48px;
-  padding-top: 14px;
+  padding-top: 12px;
   position: relative;
 }
 
@@ -428,7 +432,7 @@ SECOND LEVEL OF HEADER
   width: 150px;
   height: 45px;
   text-align: center;
-  padding-top: 14px;
+  padding-top: 12px;
 }
 
 .personal a:hover,
@@ -456,12 +460,9 @@ MAIN MENU START
   padding: 0;
   font-size: 17px;
   line-height: 17px;
-  box-shadow: inset 0px -5px 0 0 #293449;
-  margin-top: 43px;
-}
-
-.main-menu-item {
-  flex-grow: 1;
+  /* box-shadow: inset 0px -5px 0 0 #293449; */
+  margin-top: 40px;
+  padding: 0 16px;
 }
 
 .main-menu-item a {
@@ -469,7 +470,9 @@ MAIN MENU START
   text-align: center;
   color: #ffffff;
   height: 55px;
-  padding-top: 22px;
+  padding-top: 18px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 
 /* .main-menu-item:nth-child(1) a {
