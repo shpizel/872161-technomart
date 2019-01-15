@@ -504,9 +504,9 @@ VENDORS START
   border: #eaeaea 1px solid;
   /* margin-left: 20px; */
   margin-bottom: 20px;
-  display:flex;
+  /* display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .vendors-list-item:hover,
@@ -523,9 +523,9 @@ VENDORS START
 }
 
 .vendors-list-item a {
-  /* display: flex;
-  height: 145px;
-  width: 220px; */
+  display: flex;
+  height: inherit;
+  width: inherit;
 }
 
 .vendors-list-item img {
