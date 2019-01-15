@@ -63,7 +63,7 @@ INDEX TILE START
 }
 
 .ruler .bullet.active {
-  background-color: ee3643;
+  background-color: #ee3643;
   border: #fff 2px solid;
   border-radius: 5px;
 
@@ -504,6 +504,9 @@ VENDORS START
   border: #eaeaea 1px solid;
   /* margin-left: 20px; */
   margin-bottom: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vendors-list-item:hover,
