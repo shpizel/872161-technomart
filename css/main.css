@@ -1044,8 +1044,8 @@ FAST ACTIONS START
   left: 0px;
   /* padding-left: 41px;
   padding-top: 44px; */
-  background: rgba(255, 255, 255, .9);
-  margin-top: 43px;
+  background: #fff;
+  padding-top: 43px;
 }
 
 .fast-actions a {
