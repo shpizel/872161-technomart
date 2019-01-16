@@ -138,6 +138,7 @@ INDEX TILE START
   left: 25px;
   bottom: 22px;
   width: 195px;
+  padding-left: 4px; /* perfect pixel */
 }
 
 .category-ruler h3 {
@@ -149,13 +150,13 @@ INDEX TILE START
   margin: 0;
   position: absolute;
   left: 24px;
-  top: 27px;
+  top: 23px;
 }
 
 .category-ruler span {
   position: absolute;
   left: 25px;
-  top: 65px;
+  top: 60px;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -460,6 +461,10 @@ SERVICES START
   flex-grow: 1;
 }
 
+.service-slides > div {
+  height: 333px;
+}
+
 .services-interactive p {
   font-size: 13px;
   line-height: 24px;
@@ -473,7 +478,6 @@ SERVICES START
 
 .service-delivery.active {
   display: block;
-  height: 100%;
 }
 
 .service-delivery p {
@@ -488,7 +492,6 @@ SERVICES START
 
 .service-guarantee.active {
   display: block;
-  height: 100%;
 }
 
 .service-guarantee p {
@@ -502,7 +505,6 @@ SERVICES START
 
 .service-credit.active {
   display: block;
-  height: 100%;
 }
 
 .service-credit p {
@@ -533,14 +535,10 @@ VENDORS START
 }
 
 .vendors-list-item {
-  width: 220px;
-  height: 145px;
   border: #eaeaea 1px solid;
   /* margin-left: 20px; */
   margin-bottom: 20px;
-  /* display:flex;
-  align-items: center;
-  justify-content: center; */
+  display:flex;
 }
 
 .vendors-list-item:hover,
@@ -558,12 +556,14 @@ VENDORS START
 
 .vendors-list-item a {
   display: flex;
-  height: inherit;
-  width: inherit;
+  width: 218px;
+  height: 143px;
+  align-items: center;
+  justify-content: center;
 }
 
 .vendors-list-item img {
-  margin: auto;
+  /* margin: auto; */
 }
 
 /**************************************************
@@ -597,7 +597,8 @@ CONTACTS START
   padding-top: 25px;
 }
 
-.contacts-company-left p:last-child {
+/* ПОЧЕМУ НЕ РАБОТАЕТ */
+.contacts-company-left p:last-of-type {
   width: 400px;
 }
 
@@ -701,6 +702,11 @@ CATALOG START
   border: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 24px;
+}
+
+.filters hr {
+  margin-bottom: 16px;
 }
 
 .search-results legend {
@@ -708,22 +714,71 @@ CATALOG START
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .filter-group {
   height: 38px;
   background-color: #f7f3ec;
-  padding-left: 18px;
-  padding-top: 14px;
+  padding-left: 19px;
+  padding-top: 11px;
   text-transform: uppercase;
   margin: 0;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .price-filter .range {
   background-color: #f7f3ec;
+  width: 220px;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 39px 20px 0 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.range .line {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range .active-line {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range .bullet {
+  position: absolute;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  padding: 0;
+}
+
+.range .bullet.left {
+  left: 30px;
+}
+
+.range .bullet.right {
+  left: 70px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls span {
+  padding-top: 9px;
 }
 
 .price-filter input[type="text"] {
@@ -737,6 +792,12 @@ CATALOG START
   text-align: center;
 }
 
+.power-filter {
+  padding: 0;
+  padding-left: 34px;
+  margin: 0;
+}
+
 .vendor-filter-item,
 .power-filter-item {
   text-transform: uppercase;
@@ -744,9 +805,20 @@ CATALOG START
   line-height: 20px;
 }
 
+.vendor-filter-item:not(:last-child),
+.power-filter-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .filters {
   width: 220px;
   margin-right: 20px;
+}
+
+.vendor-filter ul {
+  padding: 0;
+  margin: 0;
+  padding-left: 34px;
 }
 
 .filters button[type="submit"] {
@@ -761,7 +833,7 @@ CATALOG START
 .sorter {
   /* width: 700px; */
   background-color: #f7f3ec;
-  padding-top: 14px;
+  padding-top: 10px;
   display: flex;
   padding-left: 19px;
   padding-right: 17px;
@@ -776,13 +848,14 @@ CATALOG START
   display: flex;
 }
 
-.sorter-links {
-  margin-right: 46px;
+.sorter ul:first-child {
+  margin-right: 23px;
 }
 
 .sorter-links {
+  margin-right: 46px;
+  justify-content: flex-end;
   width: 300px;
-  justify-content: space-between;
 }
 
 .sorter-buttons .sorter-button:not(:first-child) {
@@ -882,19 +955,23 @@ OFFER START
 
 .offer h3 {
   margin: 0;
-  padding-left: 32px;
-  padding-right: 33px;
+  padding: 0;
   text-align: center;
   color: #000000;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
+  margin-top: 5px;
 }
 
 .offer-name-link {
   text-decoration: none;
   color: #000000;
   display: block;
+
+
+  padding-left: 29px;
+  padding-right: 31px;
 }
 
 .offer-old-price {
@@ -905,13 +982,14 @@ OFFER START
   color: #a9a9a9;
   font-weight: bold;
   text-decoration: line-through;
-  margin-top: 18px;
-  margin-bottom: 13px;
+  margin-top: 10px;
+  margin-bottom: 7px;
   min-height: 20px;
+  text-transform: uppercase;
 }
 
 .offer-current-price {
-  margin-left: 40px;
+  margin-left: 41px;
   width: 141px;
   height: 38px;
   line-height: 18px;
@@ -923,6 +1001,7 @@ OFFER START
   background-color: #ee3643;
   display: block;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 
 .offer-current-price a {
@@ -963,24 +1042,35 @@ FAST ACTIONS START
   height: 164px;
   top: 0px;
   left: 0px;
-  padding-left: 41px;
-  padding-top: 44px;
+  /* padding-left: 41px;
+  padding-top: 44px; */
   background: rgba(255, 255, 255, .9);
+  margin-top: 43px;
 }
 
 .fast-actions a {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 18px;
   font-family: 'Cuprum', Arial, sans-serif;
   text-transform: uppercase;
   display: block;
   width: 135px;
   height: 38px;
-  padding-top: 14px;
+  padding-top: 10px;
   position: relative;
   text-decoration: none;
   border-radius: 3px;
+  margin: 0 auto 7px auto;
 }
+
+.offer-buy {
+  color: white;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+  padding-left: 49px;
+  margin-bottom: 7px;
+}
+
 
 .offer-bookmark {
   border: #63a63e 3px solid;
@@ -992,16 +1082,9 @@ FAST ACTIONS START
 .offer-bookmark:focus {
   border-color: #32425c;
 }
+
 .offer-bookmark:active {
   opacity: 0.3;
-}
-
-.offer-buy {
-  color: white;
-  box-shadow: inset 0px -3px 0 0 #367315;
-  background-color: #63a63e;
-  padding-left: 49px;
-  margin-bottom: 7px;
 }
 
 .offer-buy::before {
@@ -1051,7 +1134,7 @@ PAGINATOR START
   height: 38px;
   border:#e5e5e5 1px solid;
   border-radius: 3px;
-  padding-top: 14px;
+  padding-top: 9px;
   margin-left: 10px;
 }
 
@@ -1073,6 +1156,7 @@ PAGINATOR START
   text-align: center;
   color: #000000;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .paginator li.active {
