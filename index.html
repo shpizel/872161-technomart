@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- <html lang="ru" class="pixel-perfect index"> -->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -13,7 +14,6 @@
       <div class="header-top">
         <div class="wrapper header-wrapper">
           <a class="logo">Техномарт</a>
-
           <div class="search-top">
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <input class="search-form-query" type="text" name="q" placeholder="Поиск:">
@@ -24,27 +24,28 @@
                 <span class="visually-hidden">Найти</span></button>
             </form>
           </div>
-
           <ul class="top-menu">
-            <!-- todo .active -->
-            <li class="top-menu-item"><a class="bookmarks active" href="#">Закладки:<span class="bookmarks-count">0</span></a></li>
-            <li class="top-menu-item"><a class="basket" href="#">Корзина:<span class="basket-size">0</span></a></li>
-            <li class="top-menu-item"><a class="checkout" href="#">Оформить заказ</a></li>
+            <li class="top-menu-item">
+              <a class="bookmarks active" href="#">Закладки:<span class="bookmarks-count">0</span></a>
+            </li>
+            <li class="top-menu-item">
+              <a class="basket" href="#">Корзина:<span class="basket-size">0</span></a>
+            </li>
+            <li class="top-menu-item">
+              <a class="checkout" href="#">Оформить заказ</a>
+            </li>
           </ul>
         </div>
       </div>
 
-      <!-- приветствие, адрес, телефон, вход, регистрация -->
       <div class="wrapper header-middle">
         <p class="hello">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
-        <!-- блок контактов -->
         <div class="header-middle-contacts">
           <span class="telephone">+7 (812) 555-05-55</span>
           <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
 
-        <!-- авторизация/регистрация -->
         <div class="personal">
           <div class="account">
             <a class="login-button" href="#">
@@ -59,7 +60,6 @@
         </div>
       </div>
 
-      <!-- менюшка -->
       <nav class="wrapper">
         <ul class="main-menu">
           <li class="main-menu-item"><a href="#">Главная</a></li>
@@ -96,7 +96,7 @@
         <div class="categories-line">
           <div class="ruler categories-line">
             <div class="category-line">
-              <div class="category category-ruler category-drill">
+              <div class="category category-ruler category-drill active">
                 <h3>Дрели</h3>
                 <span>Соседям на радость!</span>
 
@@ -105,7 +105,7 @@
                 <a class="red-button" href="catalog.html">Открыть каталог</a>
               </div>
 
-              <div class="category category-ruler category-perforator display-none">
+              <div class="category category-ruler category-perforator">
                 <h3>Перфораторы</h3>
                 <span>Настоящие мужские игрушки</span>
 
@@ -360,17 +360,16 @@
     </footer>
 
     <!-- попапы -->
-    <div id="map-popup" class="popup map-popup display-none">
+    <div id="map-popup" class="popup map-popup">
       <div class="popup-inner">
         <button class="close-popup"><span class="visually-hidden">Закрыть</span></button>
-        <div class="map"><img src="img/big-map.png" alt="Карта" width="" height=""></div>
-
+        <div class="map"><img src="img/big-map.png" alt="Карта" width="940" height="446"></div>
       </div>
     </div>
 
-    <div id="cart-popup" class="popup cart-popup display-none">
+    <div id="cart-popup" class="popup cart-popup">
+      <button type="button" class="close-popup"><span class="visually-hidden">Закрыть</span></button>
       <div class="popup-inner">
-        <button type="button" class="close-popup"><span class="visually-hidden">Закрыть</span></button>
         <div class="added">Товар добавлен в корзину!</div>
 
         <div class="block-gray">
@@ -380,32 +379,33 @@
       </div>
     </div>
 
-    <div id="feedback-popup" class="popup feedback-popup display">
+    <div id="feedback-popup" class="popup feedback-popup active">
+      <button class="close-popup"><span class="visually-hidden">Закрыть</span></button>
       <div class="popup-inner">
-        <button class="close-popup"><span class="visually-hidden">Закрыть</span></button>
         <form method="post" action="https://echo.htmlacademy.ru/">
-          <div class="block-white">
-            <!-- <div  style="display: flex;">  -->
-              <div>
+          <div class="line">
+              <p>
                 <label for="feedback-popup-firstname">Ваше имя:</label>
                 <input id="feedback-popup-firstname" type="text" name="firstname" placeholder="Имя Фамилия">
-              </div>
-              <div>
+              </p>
+              <p>
                 <label for="feedback-popup-email">Ваш email:</label>
                 <input id="feedback-popup-email" type="text" name="email" placeholder="email@example.com">
-              </div>
-            </div>
-            <div>
-              <label for="feedback-popup-letter">Текст письма:</label>
-              <textarea id="feedback-popup-letter" name="letter" placeholder="В свободной форме"></textarea>
-            <!-- </div> -->
+              </p>
           </div>
+          <div class="line">
+            <label>
+              Текст письма:
+              <textarea id="feedback-popup-letter" name="letter" placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+
           <div class="block-gray">
             <button type="submit" class="red-button">Отправить</button>
           </div>
         </form>
       </div>
     </div>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>

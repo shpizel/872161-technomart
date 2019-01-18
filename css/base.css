@@ -9,6 +9,18 @@ body {
   min-width: 960px;
 }
 
+html.pixel-perfect.index {
+  background: url("../../technomart/preview/technomart-index.jpg") no-repeat center top;
+}
+
+html.pixel-perfect.catalog {
+  background: url("../../technomart/preview/technomart-catalog.jpg") no-repeat center top;
+}
+
+html.pixel-perfect body {
+  opacity: 0.5;
+}
+
 img {
   max-width: 100%;
 }
@@ -30,8 +42,6 @@ html {
 .wrapper {
   width: 940px;
   margin: 0 auto;
-  /* padding: 0 10px; */
-  /* min-width: 960px; */
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -47,8 +57,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.display-none, .hidden {
-  display: none;
 }

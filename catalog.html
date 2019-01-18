@@ -13,7 +13,6 @@
       <div class="header-top">
         <div class="wrapper header-wrapper">
           <a class="logo" href="index.html">Техномарт</a>
-
           <div class="search-top">
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <input class="search-form-query" type="text" name="q" placeholder="Поиск:">
@@ -24,27 +23,28 @@
                 <span class="visually-hidden">Найти</span></button>
             </form>
           </div>
-
           <ul class="top-menu">
-            <!-- todo .active -->
-            <li class="top-menu-item"><a class="bookmarks" href="#">Закладки: <span class="bookmarks-count">0</span></a></li>
-            <li class="top-menu-item"><a class="basket" href="#">Корзина: <span class="basket-size">0</span></a></li>
-            <li class="top-menu-item"><a class="checkout" href="#">Оформить заказ</a></li>
+            <li class="top-menu-item">
+              <a class="bookmarks" href="#">Закладки: <span class="bookmarks-count">0</span></a>
+            </li>
+            <li class="top-menu-item">
+              <a class="basket" href="#">Корзина: <span class="basket-size">0</span></a>
+            </li>
+            <li class="top-menu-item">
+              <a class="checkout" href="#">Оформить заказ</a>
+            </li>
           </ul>
         </div>
       </div>
 
-      <!-- приветствие, адрес, телефон, вход, регистрация -->
       <div class="wrapper header-middle">
         <p class="hello">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
-        <!-- блок контактов -->
         <div class="header-middle-contacts">
           <span class="telephone">+7 (812) 555-05-55</span>
           <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
 
-        <!-- авторизация/регистрация -->
         <div class="personal">
           <div class="account">
             <a href="#" class="username">
@@ -71,7 +71,6 @@
         </div>
       </div>
 
-      <!-- менюшка -->
       <nav class="wrapper">
         <ul class="main-menu">
           <li class="main-menu-item"><a href="index.html">Главная</a></li>
@@ -88,7 +87,7 @@
     <main class="page-main catalog">
       <div class="wrapper">
         <ul class="breadcrumbs wrapper">
-          <li class="home"><a href="#"><span class="hidden">home</span></a></li>
+          <li class="home"><a href="index.html"><span class="visually-hidden">home</span></a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a href="#">Перфораторы</a></li>
@@ -102,14 +101,12 @@
           <form method="get" action="https://echo.htmlacademy.ru/">
             <h3 class="filter-group">Фильтр:</h3>
 
-            <fieldset class="price-filter">
+            <fieldset class="price-filter filter">
               <legend>Цена:</legend>
-
               <div class="range">
                 <div class="line">
                   <div class="active-line"></div>
                 </div>
-
                 <button type="button" class="bullet left"><span class="visually-hidden">Цена от</span></button>
                 <button type="button" class="bullet right"><span class="visually-hidden">Цена до</span></button>
               </div>
@@ -120,32 +117,60 @@
                 <input name="max-price" type="text" value="30000">
               </div>
             </fieldset>
-
             <hr>
-
-            <fieldset class="vendor-filter">
+            <fieldset class="vendor-filter filter">
               <legend>Производители:</legend>
-
-              <ul>
-                <li class="vendor-filter-item"><label><input type="checkbox" checked class="visually-hidden" name="vendor" value="bosch">Bosch</label></li>
-                <li class="vendor-filter-item"><label><input type="checkbox" class="visually-hidden" name="vendor" value="interskol">Интерскол</label></li>
-                <li class="vendor-filter-item"><label><input checked type="checkbox" class="visually-hidden" name="vendor" value="makita">Makita</label></li>
-                <li class="vendor-filter-item"><label><input type="checkbox" class="visually-hidden" name="vendor" value="dewalt">Dewalt</label></li>
-                <li class="vendor-filter-item"><label><input type="checkbox" class="visually-hidden" name="vendor" value="hitachi">Hitachi</label></li>
+              <ul class="vendor-filter-items">
+                <li class="vendor-filter-item">
+                  <label>
+                    <input type="checkbox" checked class="visually-hidden" name="vendor" value="bosch">
+                    <span class="input-label">Bosch</span>
+                  </label>
+                </li>
+                <li class="vendor-filter-item">
+                  <label>
+                    <input type="checkbox" class="visually-hidden" name="vendor" value="interskol">
+                    <span class="input-label">Интерскол</span>
+                  </label>
+                </li>
+                <li class="vendor-filter-item">
+                  <label>
+                    <input checked type="checkbox" class="visually-hidden" name="vendor" value="makita">
+                    <span class="input-label">Makita</span>
+                  </label>
+                </li>
+                <li class="vendor-filter-item">
+                  <label>
+                    <input type="checkbox" class="visually-hidden" name="vendor" value="dewalt">
+                    <span class="input-label">Dewalt</span>
+                  </label>
+                </li>
+                <li class="vendor-filter-item">
+                  <label>
+                    <input type="checkbox" class="visually-hidden" name="vendor" value="hitachi">
+                    <span class="input-label">Hitachi</span>
+                  </label>
+                </li>
               </ul>
             </fieldset>
-
             <hr>
-
-            <fieldset class="power-filter">
+            <fieldset class="power-filter filter">
               <legend>Питание:</legend>
-
-              <ul>
-                <li class="power-filter-item"><label><input type="radio" class="visually-hidden" name="power" value="accum">Аккумуляторные</label></li>
-                <li class="power-filter-item"><label><input type="radio" class="visually-hidden" name="power" value="electricity">Сетевые</label></li>
+              <ul class="power-filter-items">
+                <li class="power-filter-item">
+                  <label>
+                    <input type="radio" checked class="visually-hidden" name="power" value="accum">
+                    <span class="input-label">Аккумуляторные</span>
+                  </label>
+                </li>
+                <li class="power-filter-item">
+                  <label>
+                    <input type="radio" class="visually-hidden" name="power" value="electricity">
+                    <span class="input-label">Сетевые</span>
+                  </label>
+                </li>
               </ul>
             </fieldset>
-
             <button type="submit">Показать</button>
           </form>
         </div>
@@ -153,26 +178,28 @@
         <div class="results">
           <div class="sorter">
             <p class="filter-group-label">Сортировка:</p>
-            <ul class="sorter-links">
-              <li class="sorter-link"><a class="active" href="#">По цене</a></li>
-              <li class="sorter-link"><a href="#">По типу</a></li>
-              <li class="sorter-link"><a href="#">По функционалу</a></li>
-            </ul>
+            <div class="sorter-group">
+              <ul class="sorter-links">
+                <li class="sorter-link"><a class="active" href="#">По цене</a></li>
+                <li class="sorter-link"><a href="#">По типу</a></li>
+                <li class="sorter-link"><a href="#">По функционалу</a></li>
+              </ul>
 
-            <!-- не понятно почему нужно делать отдельно стрелочки ( -->
-            <ul class="sorter-buttons">
-              <li class="sorter-button"><a class="asc" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path d="M5.5 0L0 10h11z"/>
-                </svg>
-                <span class="visually-hidden">asc</span></a></li>
-              <li class="sorter-button"><a class="desc" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path d="M5.5 0L0 10h11z"/>
-                </svg>
-                <span class="visually-hidden">desc</span>
-              </a></li>
-            </ul>
+              <!-- не понятно почему нужно делать отдельно стрелочки ( -->
+              <ul class="sorter-buttons">
+                <li class="sorter-button"><a class="asc" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"/>
+                  </svg>
+                  <span class="visually-hidden">asc</span></a></li>
+                <li class="sorter-button"><a class="desc" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"/>
+                  </svg>
+                  <span class="visually-hidden">desc</span>
+                </a></li>
+              </ul>
+            </div>
           </div>
 
         <div class="offers">
@@ -220,7 +247,7 @@
             <span class="offer-current-price"><a href="#">15500 р.</a></span>
           </article>
 
-          <article class="offer">
+          <article class="offer new">
             <img src="img/bosch-bfg-6000.png" alt="Перфоратор BOSCH BFG 6000">
             <div class="fast-actions">
               <a class="offer-buy" href="#">Купить</a>
@@ -231,7 +258,7 @@
             <span class="offer-current-price"><a href="#">25500 р.</a></span>
           </article>
 
-          <article class="offer new">
+          <article class="offer">
             <img src="img/bosch-bfg-2000.png" alt="Перфоратор BOSCH BFG 2000">
             <div class="fast-actions">
               <a class="offer-buy" href="#">Купить</a>
@@ -242,7 +269,7 @@
             <span class="offer-current-price"><a href="#">12500 р.</a></span>
           </article>
 
-          <article class="offer">
+          <article class="offer new">
             <img src="img/bosch-bfg-3000.png" alt="Перфоратор BOSCH BFG 3000">
             <div class="fast-actions">
               <a class="offer-buy" href="#">Купить</a>
@@ -356,6 +383,6 @@
       </footer>
 
       <!-- todo: попапы скопирую из index.html позже -->
-      <!-- <script src="js/script.js"></script> -->
+      <script src="js/script.js"></script>
     </body>
   </html>

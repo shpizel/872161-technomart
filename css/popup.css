@@ -1,17 +1,25 @@
 .popup {
-  position: absolute;
-  top: 100px;
-  left: 100px;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: 200px;
   box-sizing: border-box;
   border: #999 1px solid;
   border-top: #ff5357 7px solid;
   background-color: white;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  display: none;
 }
 
-.popup-inner {
-  position: relative;
+.popup.active {
+  display: block;
 }
+
+/* .popup-inner {
+  position: relative;
+} */
 
 .close-popup {
   position: absolute;
@@ -20,33 +28,51 @@
   border: none;
   right: 10px;
   top: 10px;
-  background-image: url(../img/icon-close.svg);
+  background: transparent url(../img/icon-close.svg);
+  cursor: pointer;
 }
 
 .map-popup {
   width: 940px;
-  height: 448px;
+  /* height: 448px; */
 }
 
 .cart-popup {
   width: 620px;
-  height: 282px;
+  padding: 0;
+  margin: 0;
 }
 
 .cart-popup .added {
   font-size: 30px;
-  line-height: 66px;
-  padding-left: 98px;
+  line-height: 30px;
+  padding: 18px 0 18px 98px;
   background: url("../img/icon-mark.svg") no-repeat left center;
+  margin-top: 55px;
+  margin-left: 81px;
 }
 
 .cart-popup .block-gray {
   display: flex;
+  background-color: #f1f1f1;
+  padding: 37px 80px;
+  justify-content: space-between;
+  margin-top: 49px;
+}
+
+.cart-popup .red-button {
+  width: 220px;
+}
+
+.cart-popup .red-button.white-button {
+  background-color: #fff;
+  color: #000;
+  border: 0;
 }
 
 .feedback-popup {
   width: 620px;
-  height: 430px;
+  /* height: 430px; */
 }
 
 .feedback-popup .block-white {
@@ -86,13 +112,33 @@
   resize: none;
 }
 
+.feedback-popup input,
+.feedback-popup textarea {
+  display: block;
+}
+
 .feedback-popup .block-gray {
+  margin-top: 37px;
   background-color: #f4f4f4;
   padding: 37px 80px;
 }
 
 .feedback-popup .red-button {
   width: 100%;
+}
+
+.feedback-popup .line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-popup form {
+  padding-top: 43px;
+}
+
+.feedback-popup .line {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .popup input:hover,
