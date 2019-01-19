@@ -1,3 +1,7 @@
+/**************************************************
+POPUPS START
+**************************************************/
+
 .popup {
   z-index: 100;
   position: fixed;
@@ -17,10 +21,6 @@
   display: block;
 }
 
-/* .popup-inner {
-  position: relative;
-} */
-
 .close-popup {
   position: absolute;
   width: 21px;
@@ -34,7 +34,6 @@
 
 .map-popup {
   width: 940px;
-  /* height: 448px; */
 }
 
 .cart-popup {
@@ -72,11 +71,9 @@
 
 .feedback-popup {
   width: 620px;
-  /* height: 430px; */
 }
 
 .feedback-popup .block-white {
-  /* padding-top: 48px; */
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -91,7 +88,7 @@
   padding-left: 17px;
   height: 38px;
   width: 220px;
-  color: #a9a9a9;
+  color: #000000;
   font-size: 13px;
   line-height: 18px;
   margin-top: 13px;
@@ -102,7 +99,7 @@
 .feedback-popup textarea {
   width: 460px;
   height: 114px;
-  color: #a9a9a9;
+  color: #000000;
   font-size: 13px;
   line-height: 18px;
   margin-top: 13px;
@@ -151,3 +148,7 @@
   border-color: #ee3643;
   outline: 0;
 }
+
+/**************************************************
+POPUPS END
+**************************************************/

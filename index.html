@@ -115,15 +115,16 @@
               </div>
             </div>
 
-          <!-- кружочки-переключалки button на js -->
           <button type="button" class="bullet bullet-left active"></button>
           <button type="button" class="bullet bullet-right"></button>
 
-          <!-- стрелочки -->
-          <button type="button" class="arrow arrow-left"><span class="visually-hidden">&lt;</span></button>
-          <button type="button" class="arrow arrow-right"><span class="visually-hidden">&gt;</span></button>
+          <button type="button" class="arrow arrow-left">
+            <span class="visually-hidden">&lt;</span>
+          </button>
+          <button type="button" class="arrow arrow-right">
+            <span class="visually-hidden">&gt;</span>
+          </button>
         </div>
-
 
         <div class="category-column">
           <div class="category category-discounts">
@@ -139,13 +140,12 @@
       </div>
       </section>
 
-      <!-- популярные товары -->
       <section class="popular wrapper">
         <header>
           <h2>Популярные товары:</h2>
           <a class="red-button" href="#">Все популярные товары</a>
         </header>
-        <!-- врезка товаров -->
+
         <div class="offers">
           <article class="offer">
             <img src="img/bosch-bfg-9000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
@@ -193,7 +193,6 @@
         </div>
       </section>
 
-      <!-- популярные производители -->
       <section class="popular wrapper">
         <header>
           <h2>Популярные производители:</h2>
@@ -240,10 +239,8 @@
             </a>
           </li>
         </ul>
-
       </section>
 
-      <!-- сервисы -->
       <section class="services">
         <div class="service-about wrapper">
           <h2>Сервисы</h2>
@@ -251,7 +248,7 @@
 
           <div class="services-interactive">
             <ul class="services-menu">
-              <li class="services-menu-item"><a class="active" href="#">Доставка</a></li>
+              <li class="services-menu-item active"><a href="#">Доставка</a></li>
               <li class="services-menu-item"><a href="#">Гарантия</a></li>
               <li class="services-menu-item"><a href="#">Кредит</a></li>
             </ul>
@@ -260,21 +257,32 @@
               <div class="service-delivery active">
                 <div class="description">
                   <h3>Доставка</h3>
-                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                  <p>
+                    Мы с удовольствием доставим ваш товар прямо<br> 
+                    к вашему подъезду совершенно бесплатно!<br> 
+                    Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                  </p>
                 </div>
               </div>
 
               <div class="service-guarantee">
                 <div class="description">
                   <h3>Гарантия</h3>
-                  <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                  <p>
+                    Если купленный у нас товар поломается или заискрит,<br> 
+                    а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
                 </div>
               </div>
 
               <div class="service-credit">
                 <div class="description">
                   <h3>Кредит</h3>
-                  <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                  <p>
+                    Залезть в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.
+                  </p>
                   <a class="red-button" href="#">Отправить заявку</a>
                 </div>
               </div>
@@ -283,7 +291,6 @@
         </div>
       </section>
 
-      <!-- компания, контакты -->
       <section class="wrapper contacts">
         <div class="contacts-company contacts-company-left">
           <h2>Компания «Техномарт»</h2>
@@ -340,7 +347,6 @@
         </div>
       </section>
 
-      <!-- копирайты и пр. -->
       <section class="footer-bottom">
         <div class="wrapper footer-wrapper">
           <p class="footer-bottom-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
@@ -359,7 +365,6 @@
       </section>
     </footer>
 
-    <!-- попапы -->
     <div id="map-popup" class="popup map-popup">
       <div class="popup-inner">
         <button class="close-popup"><span class="visually-hidden">Закрыть</span></button>
@@ -379,19 +384,19 @@
       </div>
     </div>
 
-    <div id="feedback-popup" class="popup feedback-popup active">
+    <div id="feedback-popup" class="popup feedback-popup">
       <button class="close-popup"><span class="visually-hidden">Закрыть</span></button>
       <div class="popup-inner">
         <form method="post" action="https://echo.htmlacademy.ru/">
           <div class="line">
-              <p>
-                <label for="feedback-popup-firstname">Ваше имя:</label>
-                <input id="feedback-popup-firstname" type="text" name="firstname" placeholder="Имя Фамилия">
-              </p>
-              <p>
-                <label for="feedback-popup-email">Ваш email:</label>
-                <input id="feedback-popup-email" type="text" name="email" placeholder="email@example.com">
-              </p>
+            <p>
+              <label for="feedback-popup-firstname">Ваше имя:</label>
+              <input id="feedback-popup-firstname" type="text" name="firstname" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="feedback-popup-email">Ваш email:</label>
+              <input id="feedback-popup-email" type="text" name="email" placeholder="email@example.com">
+            </p>
           </div>
           <div class="line">
             <label>

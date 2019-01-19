@@ -1,3 +1,7 @@
+/**************************************************
+FOOTER START
+**************************************************/
+
 .page-footer {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -191,3 +195,7 @@
 .social-item-instagram a {
   background: #212a3a url("../img/icon-insta.svg") no-repeat center;
 }
+
+/**************************************************
+FOOTER END
+**************************************************/

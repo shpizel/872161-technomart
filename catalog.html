@@ -123,31 +123,31 @@
               <ul class="vendor-filter-items">
                 <li class="vendor-filter-item">
                   <label>
-                    <input type="checkbox" checked class="visually-hidden" name="vendor" value="bosch">
+                    <input type="checkbox" checked class="filter-checkbox visually-hidden" name="vendor" value="bosch">
                     <span class="input-label">Bosch</span>
                   </label>
                 </li>
                 <li class="vendor-filter-item">
                   <label>
-                    <input type="checkbox" class="visually-hidden" name="vendor" value="interskol">
+                    <input type="checkbox" class="filter-checkbox visually-hidden" name="vendor" value="interskol">
                     <span class="input-label">Интерскол</span>
                   </label>
                 </li>
                 <li class="vendor-filter-item">
                   <label>
-                    <input checked type="checkbox" class="visually-hidden" name="vendor" value="makita">
+                    <input checked type="checkbox" class="filter-checkbox visually-hidden" name="vendor" value="makita">
                     <span class="input-label">Makita</span>
                   </label>
                 </li>
                 <li class="vendor-filter-item">
                   <label>
-                    <input type="checkbox" class="visually-hidden" name="vendor" value="dewalt">
+                    <input type="checkbox" class="filter-checkbox visually-hidden" name="vendor" value="dewalt">
                     <span class="input-label">Dewalt</span>
                   </label>
                 </li>
                 <li class="vendor-filter-item">
                   <label>
-                    <input type="checkbox" class="visually-hidden" name="vendor" value="hitachi">
+                    <input type="checkbox" class="filter-checkbox visually-hidden" name="vendor" value="hitachi">
                     <span class="input-label">Hitachi</span>
                   </label>
                 </li>
@@ -159,13 +159,13 @@
               <ul class="power-filter-items">
                 <li class="power-filter-item">
                   <label>
-                    <input type="radio" checked class="visually-hidden" name="power" value="accum">
+                    <input type="radio" checked class="filter-radio visually-hidden" name="power" value="accum">
                     <span class="input-label">Аккумуляторные</span>
                   </label>
                 </li>
                 <li class="power-filter-item">
                   <label>
-                    <input type="radio" class="visually-hidden" name="power" value="electricity">
+                    <input type="radio" class="filter-radio visually-hidden" name="power" value="electricity">
                     <span class="input-label">Сетевые</span>
                   </label>
                 </li>
@@ -180,19 +180,18 @@
             <p class="filter-group-label">Сортировка:</p>
             <div class="sorter-group">
               <ul class="sorter-links">
-                <li class="sorter-link"><a class="active" href="#">По цене</a></li>
-                <li class="sorter-link"><a href="#">По типу</a></li>
-                <li class="sorter-link"><a href="#">По функционалу</a></li>
+                <li><a class="sorter-link active" href="#">По цене</a></li>
+                <li><a class="sorter-link" href="#">По типу</a></li>
+                <li><a class="sorter-link" href="#">По функционалу</a></li>
               </ul>
 
-              <!-- не понятно почему нужно делать отдельно стрелочки ( -->
               <ul class="sorter-buttons">
-                <li class="sorter-button"><a class="asc" href="#">
+                <li><a class="sorter-button asc" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                     <path d="M5.5 0L0 10h11z"/>
                   </svg>
                   <span class="visually-hidden">asc</span></a></li>
-                <li class="sorter-button"><a class="desc" href="#">
+                <li><a class="sorter-button desc" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                     <path d="M5.5 0L0 10h11z"/>
                   </svg>
@@ -291,7 +290,7 @@
             <span class="offer-current-price"><a href="#">25500 р.</a></span>
           </article>
 
-          <article class="offer new">
+          <article class="offer">
             <img src="img/bosch-bfg-2000.png" alt="Перфоратор BOSCH BFG 2000">
             <div class="fast-actions">
               <a class="offer-buy" href="#">Купить</a>
@@ -303,12 +302,12 @@
           </article>
         </div>
 
-        <div class="paginator">
+        <div class="pagination">
           <ul>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li class="next"><a href="#">Следующая</a></li>
+            <li class="pagination-item active"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></l>
+            <li class="pagination-item next"><a href="#">Следующая</a></li>
           </ul>
         </div>
       </div>
@@ -318,7 +317,7 @@
         <div class="service-perforator wrapper">
           <h2>Пара слов о перфораторах</h2>
           <p>
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
             В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
@@ -326,63 +325,67 @@
       </section>
     </main>
 
-    <!-- нижнее меню и подвал  -->
     <footer class="page-footer">
-        <section class="footer-top">
-          <div class="wrapper footer-wrapper">
-            <a class="logo" href="index.html">Техномарт</a>
+      <section class="footer-top">
+        <div class="wrapper footer-wrapper">
+          <a class="logo" href="index.html">Техномарт</a>
 
-            <ul class="footer-top-menu">
-              <li class="footer-top-menu-item"><a href="#">Компания</a></li>
-              <li class="footer-top-menu-item"><a href="#">Новости</a></li>
-              <li class="footer-top-menu-item"><a href="catalog.html">Каталог</a></li>
-              <li class="footer-top-menu-item"><a href="#">Доставка</a></li>
-              <li class="footer-top-menu-item"><a href="#">Контакты</a></li>
-            </ul>
+          <ul class="footer-top-menu">
+            <li class="footer-top-menu-item"><a href="#">Компания</a></li>
+            <li class="footer-top-menu-item"><a href="#">Новости</a></li>
+            <li class="footer-top-menu-item"><a href="catalog.html">Каталог</a></li>
+            <li class="footer-top-menu-item"><a href="#">Доставка</a></li>
+            <li class="footer-top-menu-item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footer-middle">
+        <div class="wrapper footer-wrapper">
+          <div class="footer-middle-contacts">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            +7 (812) 555-05-55</p>
           </div>
-        </section>
 
-        <section class="footer-middle">
-          <div class="wrapper footer-wrapper">
-            <div class="footer-middle-contacts">
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-              +7 (812) 555-05-55</p>
-            </div>
+          <ul class="footer-middle-menu">
+            <li class="footer-middle-menu-item"><a href="#">Материалы</a></li>
+            <li class="footer-middle-menu-item"><a href="#">Техника</a></li>
+            <li class="footer-middle-menu-item"><a href="#">Инструмент</a></li>
+            <li class="footer-middle-menu-item"><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
+      </section>
 
-            <ul class="footer-middle-menu">
-              <li class="footer-middle-menu-item"><a href="#">Материалы</a></li>
-              <li class="footer-middle-menu-item"><a href="#">Техника</a></li>
-              <li class="footer-middle-menu-item"><a href="#">Инструмент</a></li>
-              <li class="footer-middle-menu-item"><a href="#">Спецпредложения</a></li>
-            </ul>
+      <section class="footer-bottom">
+        <div class="wrapper footer-wrapper">
+          <p class="footer-bottom-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
+
+          <ul class="footer-bottom-social">
+            <li class="social-item-vk"><a href="#"><span class="visually-hidden">vk</span></a></li>
+            <li class="social-item-fb"><a href="#"><span class="visually-hidden">fb</span></a></li>
+            <li class="social-item-instagram"><a href="#"><span class="visually-hidden">instagram</span></a></li>
+          </ul>
+
+          <div class="footer-bottom-contacts">
+            <p><span>Обратная связь:</span><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p><span>Разработано —</span><a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
           </div>
-        </section>
 
-        <!-- копирайты и пр. -->
-        <section class="footer-bottom">
-          <div class="wrapper footer-wrapper">
-            <p class="footer-bottom-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
-
-            <ul class="footer-bottom-social">
-              <li class="social-item-vk"><a href="#"><span class="visually-hidden">vk</span></a></li>
-              <li class="social-item-fb"><a href="#"><span class="visually-hidden">fb</span></a></li>
-              <li class="social-item-instagram"><a href="#"><span class="visually-hidden">instagram</span></a></li>
-            </ul>
-
-            <div class="footer-bottom-contacts">
-              <p><span>Обратная связь:</span><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-              <p><span>Разработано —</span><a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
-            </div>
-
-            <div id="map-popup" class="popup map-popup display-none">
-              <div class="map"></div>
-              <button class="close-popup"><span class="visually-hidden">Закрыть</span></button>
-            </div>
+          <div id="map-popup" class="popup map-popup display-none">
+            <div class="map"></div>
+            <button class="close-popup"><span class="visually-hidden">Закрыть</span></button>
           </div>
-        </section>
+        </div>
+      </section>
       </footer>
 
-      <!-- todo: попапы скопирую из index.html позже -->
+      <div id="map-popup" class="popup map-popup">
+        <div class="popup-inner">
+          <button class="close-popup"><span class="visually-hidden">Закрыть</span></button>
+          <div class="map"><img src="img/big-map.png" alt="Карта" width="940" height="446"></div>
+        </div>
+      </div>
+
       <script src="js/script.js"></script>
     </body>
   </html>

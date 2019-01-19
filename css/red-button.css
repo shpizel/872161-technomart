@@ -1,3 +1,7 @@
+/**************************************************
+RED BUTTON START
+**************************************************/
+
 .red-button {
   font-family: 'Cuprum', Arial, sans-serif;
   background-color: #ee3643;
@@ -13,6 +17,7 @@
   border-radius: 3px;
   text-decoration: none;
   display: block;
+  border: none;
 }
 
 .red-button:hover,
@@ -23,3 +28,7 @@
 .red-button:active {
   background-color: #ba2732;
 }
+
+/**************************************************
+RED BUTTON END
+**************************************************/

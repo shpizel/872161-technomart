@@ -9,6 +9,10 @@ body {
   min-width: 960px;
 }
 
+/**************************************************
+PIXEL PERFECT TEST START
+**************************************************/
+
 html.pixel-perfect.index {
   background: url("../../technomart/preview/technomart-index.jpg") no-repeat center top;
 }
@@ -20,6 +24,10 @@ html.pixel-perfect.catalog {
 html.pixel-perfect body {
   opacity: 0.5;
 }
+
+/**************************************************
+PIXEL PERFECT TEST END
+**************************************************/
 
 img {
   max-width: 100%;
