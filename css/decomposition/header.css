@@ -108,6 +108,10 @@ SEARCH FORM START
   color: #000000;
 }
 
+.search-form-query:hover {
+  background-color: #212a3a;
+}
+
 .search-form-query:focus {
   color: #000000;
   background-color: #ffffff;

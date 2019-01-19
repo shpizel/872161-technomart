@@ -141,6 +141,7 @@ input[type="radio"].visually-hidden {
 
 .search-form {
   position: relative;
+  background-color: #293449;
 }
 
 .search-form-query {
@@ -151,8 +152,9 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 18px;
   padding: 12px 0 12px 48px;
+  background-color: transparent;
   outline: 0;
-  background-color: #293449;
+  
   color: #ffffff;
 }
 
@@ -208,6 +210,10 @@ input[type="radio"].visually-hidden {
 
 .search-form-query:focus::placeholder {
   color: #000000;
+}
+
+.search-form:hover {
+  background-color: #212a3a;
 }
 
 .search-form-query:focus {
