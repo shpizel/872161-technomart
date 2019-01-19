@@ -457,6 +457,7 @@ MAIN MENU START
 
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   background: #32425c;
   border-bottom: #293449 5px solid;
