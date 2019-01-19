@@ -1,7 +1,3 @@
-/* .page-main {
-  margin-top: 59px;
-} */
-
 /**************************************************
 INDEX TILE START
 **************************************************/
@@ -171,18 +167,20 @@ INDEX TILE START
 }
 
 .category .button {
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  position: absolute;
-  left: 25px;
-  bottom: 22px;
   display: block;
   width: 135px;
   height: 38px;
+
+  
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+  
   background-color: rgba(0, 0, 0, 0.1);
-  /* padding-left: 24px; */
   padding-top: 10px;
   border-radius: 2px;
 }
@@ -479,9 +477,9 @@ CONTACTS START
 }
 
 /* ПОЧЕМУ НЕ РАБОТАЕТ */
-.contacts-company-left p:last-of-type {
+/* .contacts-company-left p:last-of-type {
   width: 400px;
-}
+} */
 
 .contacts-company .map {
   margin-top: 30px;
@@ -572,7 +570,7 @@ SEARCH RESULTS START
   margin-left: 17px;
 }
 
-.breadcrumbs .home a:before {
+.breadcrumbs .home:before {
   content: "";
   display: block;
   width: 14px;
@@ -581,14 +579,13 @@ SEARCH RESULTS START
   margin-top:1px;
 }
 
-.breadcrumbs li:not(.home) {
+.breadcrumbs li:not(:first-child) {
   background: url("../img/icon-right-small.svg") no-repeat center left;
   padding-left: 24px;
 }
 
 .breadcrumbs a {
   color: #000;
-  text-decoration: none;
 }
 
 .catalog h1 {
@@ -606,7 +603,6 @@ SEARCH RESULTS START
 
 .search-results {
   display: flex;
-  /* flex-direction: column; */
 }
 
 .search-results .results {
@@ -623,7 +619,7 @@ CATALOG FILTERS START
 
 .filters hr {
   height: 1px;
-  background-color: #ccc;
+  background-color: #e5e5e5;
   border: 0;
   padding: 0;
 }
@@ -631,8 +627,6 @@ CATALOG FILTERS START
 .search-results fieldset {
   border: none;
   padding: 0;
-  /* margin: 0; */
-  /* margin-bottom: 22px; */
 }
 
 .search-results legend {
@@ -884,7 +878,6 @@ SORTER START
   padding: 0;
   list-style: none;
 }
-
 
 .sorter-links {
   margin-right: 46px;
