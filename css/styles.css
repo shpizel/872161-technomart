@@ -146,16 +146,16 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.search-form-query + svg.magnifier {
+.search-form-query + button svg {
   fill: #ffffff;
   opacity: 0.3;
 }
 
-.search-form-query:hover:not(:focus) + svg.magnifier {
+.search-form-query:hover:not(:focus) + button svg {
   opacity: 1.0;
 }
 
-.search-form-query:focus + svg.magnifier {
+.search-form-query:focus + button svg {
   fill: #ee3643;
   opacity: 1.0;
 }
