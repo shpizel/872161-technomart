@@ -1,20 +1,3 @@
-/**************************************************
-PIXEL PERFECT TEST START
-**************************************************/
-
-html.pixel-perfect.index {
-  background: url("../../technomart/preview/technomart-index.jpg") no-repeat center top;
-}
-
-html.pixel-perfect.catalog {
-  background: url("../../technomart/preview/technomart-catalog.jpg") no-repeat center top;
-}
-
-html.pixel-perfect body {
-  opacity: 0.5;
-}
-/*------*/
-
 body {
   margin: 0;
 
@@ -1328,6 +1311,10 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
 }
 
+.price-controls input[type="text"] {
+  padding: 10px 24px;
+}
+
 .price-filter input[type="text"] {
   background-color: #f7f3ec;
   width: 95px;
@@ -1389,7 +1376,7 @@ span.input-label {
   background: url("../img/radio-on.svg");
 }
 
-.filter-radio:hover + span.input-label::before,
+.filter-radio + span.input-label:hover::before,
 .filter-radio:focus + span.input-label::before {
   opacity: 1.0;
 }
@@ -1419,7 +1406,7 @@ span.input-label {
   width: 27px;
 }
 
-.filter-checkbox:hover + span.input-label::before,
+.filter-checkbox + span.input-label:hover::before,
 .filter-checkbox:focus + span.input-label::before {
   opacity: 1.0;
 }
@@ -1772,7 +1759,7 @@ span.input-label {
 .pagination-item {
   border:#e5e5e5 1px solid;
   border-radius: 3px;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .pagination-item:first-child {
@@ -1790,8 +1777,8 @@ span.input-label {
 
 .pagination-item a {
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   padding-top: 9px;
   text-align: center;
   color: #000000;
